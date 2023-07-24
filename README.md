@@ -11,6 +11,11 @@ Before getting started, I needed to have the following prerequisites in place:
 - Terraform installed on local machine <br/>
 - AWS CLI configured with appropriate credentials <br/>
 
+##### Architecture Design
+
+Web Tier <br/>
+The Web tier is responsible for handling client traffic. We deployed Amazon EC2 servers in a private subnet to host the web servers. It was accessible through an Application Load Balancer (ALB). <br/>
+
 #### References
 1. [Install LAMP on Amazon Linux 2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html)<br/>
 2. [Install LAMP on Amazon Linux 2023](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2023.html) <br/>
