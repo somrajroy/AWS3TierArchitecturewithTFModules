@@ -33,7 +33,10 @@ Terraform Configuration <br/>
 Our Terraform configuration was organized into different modules for VPC, EC2, ALB, RDS, and security groups. We used official AWS Terraform modules to simplify the setup. <br/>
 
 ##### Terraform
-Terraform played a crucial role in the setup of the architecture. With Terraform's declarative syntax, we were able to define our infrastructure as code. We created configuration files that specified the desired state of our AWS resources, including VPC, RDS database, security groups, and more. Terraform then took care of provisioning and managing these resources in a repeatable and consistent manner.
+Terraform played a crucial role in the setup of the architecture. With Terraform's declarative syntax, we were able to define our infrastructure as code. We created configuration files that specified the desired state of our AWS resources, including VPC, RDS database, security groups, and more. Terraform then took care of provisioning and managing these resources in a repeatable and consistent manner. The Terraform modules are elaborated below.
+
+  terraform-aws-modules/vpc/aws <br/>
+
 
 ##### Deployment Process
 1. We started by initializing the Terraform configuration and validating it.<br/>
