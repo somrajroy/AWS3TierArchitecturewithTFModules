@@ -16,6 +16,17 @@ Before getting started, I needed to have the following prerequisites in place:
 Web Tier <br/>
 The Web tier is responsible for handling client traffic. We deployed Amazon EC2 servers in a private subnet to host the web servers. It was accessible through an Application Load Balancer (ALB). <br/>
 
+Application Tier <br/>
+The Application tier consists of one or more EC2 instances deployed in a private subnet. We installed the necessary application components (e.g., PHP) on these instances.<br/>
+
+Database Tier <br/>
+The Database tier used Amazon RDS for MySQL. It was deployed in a private subnet to ensure security. <br/>
+
+Terraform Configuration <br/>
+
+Our Terraform configuration was organized into different modules for VPC, EC2, ALB, RDS, and security groups. We used official AWS Terraform modules to simplify the setup. <br/>
+
+
 #### References
 1. [Install LAMP on Amazon Linux 2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html)<br/>
 2. [Install LAMP on Amazon Linux 2023](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2023.html) <br/>
