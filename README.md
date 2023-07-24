@@ -35,7 +35,7 @@ Our Terraform configuration was organized into different modules for VPC, EC2, A
 ##### Terraform
 Terraform played a crucial role in the setup of the architecture. With Terraform's declarative syntax, we were able to define our infrastructure as code. We created configuration files that specified the desired state of our AWS resources, including VPC, RDS database, security groups, and more. Terraform then took care of provisioning and managing these resources in a repeatable and consistent manner. The Terraform modules are elaborated below.
 
-  terraform-aws-modules/vpc/aws <br/>
+ - terraform-aws-modules/vpc/aws : The terraform-aws-modules/vpc/aws module is designed to create a Virtual Private Cloud (VPC) in AWS. A VPC is a logically isolated section of the AWS cloud where you can launch resources, such as Amazon EC2 instances and RDS databases. This module abstracts the complexities of creating a VPC and provides a simple, reusable configuration.
 
 
 ##### Deployment Process
@@ -51,6 +51,13 @@ Security was a crucial aspect of our setup. We implemented the following securit
 - Restricted direct access to the Application and Database tiers by placing them in private subnets. <br/>
 - Used network ACLs to control traffic at the subnet level. <br/>
 - Configured IAM roles and policies for EC2 instances to access other AWS services securely. <br/>
+
+##### Best Practices
+Here are some practices I followed during the project that could be helpful:
+
+ - Use modules whenever possible to increase code reusability and decrease code redundancy.
+ - Use proper naming conventions for resources to avoid naming conflicts.
+ - Use version controls Git as single source of truth.
 
 ##### Conclusion
 
