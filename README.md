@@ -40,8 +40,30 @@ Security was a crucial aspect of our setup. We implemented the following securit
 - Used network ACLs to control traffic at the subnet level. <br/>
 - Configured IAM roles and policies for EC2 instances to access other AWS services securely. <br/>
 
+##### Best Practices
+
+Throughout the setup, we followed these best practices:
+
+- Used parameterization and variables in Terraform to promote reusability.
+- Employed tags on resources for better organization and management.
+- Enabled logging and monitoring for visibility into the application's performance and security.
+
+##### Testing and Validation
+
+We performed comprehensive testing to ensure the architecture's reliability and functionality. This included load testing, functional testing, and database performance testing.
+
+##### Lessons Learned
+
+During the project, we encountered a few challenges, such as troubleshooting connectivity issues between the tiers. We learned the importance of planning and testing thoroughly before deploying to a production environment.
+
+##### Conclusion
+
+Setting up a Three-tier architecture in AWS using Terraform was an insightful experience. It allowed us to gain a deeper understanding of AWS services and infrastructure as code practices. I hope this blog post inspires others to explore this architecture and its benefits.
 
 
-#### References
+
+#### Appendix & References
+
+Below are some additional resources and references for further learning: <br/>
 1. [Install LAMP on Amazon Linux 2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html)<br/>
 2. [Install LAMP on Amazon Linux 2023](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2023.html) <br/>
