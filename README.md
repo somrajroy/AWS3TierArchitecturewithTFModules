@@ -26,6 +26,10 @@ Terraform Configuration <br/>
 
 Our Terraform configuration was organized into different modules for VPC, EC2, ALB, RDS, and security groups. We used official AWS Terraform modules to simplify the setup. <br/>
 
+##### Deployment Process
+1. We started by initializing the Terraform configuration and validating it.<br/>
+2. We used `terraform apply` to create the resources based on our configuration. <br/>
+3. Once deployed, we accessed the application through the ALB's DNS name. <br/>
 
 #### References
 1. [Install LAMP on Amazon Linux 2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html)<br/>
