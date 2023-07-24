@@ -31,6 +31,17 @@ Our Terraform configuration was organized into different modules for VPC, EC2, A
 2. We used `terraform apply` to create the resources based on our configuration. <br/>
 3. Once deployed, we accessed the application through the ALB's DNS name. <br/>
 
+##### Security Considerations
+
+Security was a crucial aspect of our setup. We implemented the following security measures: <br/>
+
+- Limited access to the Web tier via security groups and an ALB. <br/>
+- Restricted direct access to the Application and Database tiers by placing them in private subnets. <br/>
+- Used network ACLs to control traffic at the subnet level. <br/>
+- Configured IAM roles and policies for EC2 instances to access other AWS services securely. <br/>
+
+
+
 #### References
 1. [Install LAMP on Amazon Linux 2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html)<br/>
 2. [Install LAMP on Amazon Linux 2023](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2023.html) <br/>
