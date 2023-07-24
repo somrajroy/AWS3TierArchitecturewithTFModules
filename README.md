@@ -32,6 +32,9 @@ Terraform Configuration <br/>
 
 Our Terraform configuration was organized into different modules for VPC, EC2, ALB, RDS, and security groups. We used official AWS Terraform modules to simplify the setup. <br/>
 
+##### Terraform
+Terraform played a crucial role in the setup of the architecture. With Terraform's declarative syntax, we were able to define our infrastructure as code. We created configuration files that specified the desired state of our AWS resources, including VPC, RDS database, security groups, and more. Terraform then took care of provisioning and managing these resources in a repeatable and consistent manner.
+
 ##### Deployment Process
 1. We started by initializing the Terraform configuration and validating it.<br/>
 2. We used `terraform apply` to create the resources based on our configuration. <br/>
@@ -48,7 +51,7 @@ Security was a crucial aspect of our setup. We implemented the following securit
 
 ##### Conclusion
 
-Setting up a Three-tier architecture in AWS using Terraform was an insightful experience. It allowed us to gain a deeper understanding of AWS services and infrastructure as code practices. I hope this blog post inspires others to explore this architecture and its benefits.
+Setting up a Three-tier architecture in AWS using Terraform & LAMP stack was an insightful & rewarding experience.  The combination of these technologies allowed us to achieve scalability, security, and reliability for our web application. It allowed us to gain a deeper understanding of AWS services and infrastructure as code practices. I hope this blog post inspires others to explore this architecture and its benefits.
 
 #### Appendix/References
 
