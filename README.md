@@ -31,6 +31,8 @@ The Database tier used Amazon RDS for MySQL. It was deployed in a private subnet
 Terraform Configuration <br/>
 
 Our Terraform configuration was organized into different modules for VPC, EC2, ALB, RDS, and security groups. We used official AWS Terraform modules to simplify the setup. <br/>
+Modularization in Terraform : This project is fully based on turn-key modules. The best part is that it can also be used to create opinionated modules very easily.Terraform modules are very useful, but they must add value. The value in a module, its opinions. If a module isn’t opinionated, then it isn’t adding value. Customers should decide how things should be done and create a module to implement their own preferred approach. 
+
 
 ##### Terraform
 Terraform played a crucial role in the setup of the architecture. With Terraform's declarative syntax, we were able to define our infrastructure as code. We created configuration files that specified the desired state of our AWS resources, including VPC, RDS database, security groups, and more. Terraform then took care of provisioning and managing these resources in a repeatable and consistent manner. The Terraform modules are elaborated below.
@@ -41,7 +43,14 @@ Terraform played a crucial role in the setup of the architecture. With Terraform
      - Default configuration for internet and NAT gateways to enable public and private network access.
      - Customizable CIDR blocks for VPC and subnets.
      - Built-in tagging for resources to improve organization and management.
- 
+   - Advantages
+     - Turn-key solution: The module simplifies the creation of a VPC by providing a pre-configured setup. Users can easily customize it based on their   
+       requirements.
+     - Reusability: Since the module is parameterized and allows for variable customization, you can use it across multiple projects without having to rewrite the  
+       VPC setup code.
+    - Disadvantages
+     - Limited flexibility: While the module provides a lot of convenience, it might not cover every possible use case. Advanced users might find themselves 
+       needing to customize it extensively.  
 
 
 ##### Deployment Process
@@ -75,3 +84,4 @@ Below are some additional resources and references for further learning: <br/>
 
 1. [Install LAMP on Amazon Linux 2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html)<br/>
 2. [Install LAMP on Amazon Linux 2023](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2023.html) <br/>
+3. [Opinionated Terraform Best Practices and Anti-Patterns](https://www.hashicorp.com/resources/opinionated-terraform-best-practices-and-anti-patterns)<br/>
