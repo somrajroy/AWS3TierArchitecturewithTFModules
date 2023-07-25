@@ -94,8 +94,14 @@ Terraform played a crucial role in the setup of the architecture. With Terraform
         code and documentation, one can learn about security configurations, parameter groups, backup strategies, and other recommended practices for managing 
         RDS instances.
      
-    - Module terraform-aws-modules/security-group/aws : The terraform-aws-modules/security-group/aws module simplifies the setup of AWS Security Groups. Security 
-      Groups act as virtual firewalls for AWS resources, controlling inbound and outbound traffic.
+    - Module terraform-aws-modules/security-group/aws : The terraform-aws-modules/security-group/aws module simplifies the creation and management of AWS 
+      Security Groups. It provides a variety of features and options for configuring security group rules, allowing to define ingress and egress traffic 
+      permissions for AWS Infra resources.
+    - **Features**
+      - Flexible Rule Configuration: The module supports various ways to configure ingress and egress rules, including specifying individual ports, port ranges, 
+        CIDR blocks, security group IDs, and more. This flexibility allows to define custom security group rules tailored to specific needs and use case(s).
+      - Named Groups of Rules: The module includes pre-defined named groups of rules for common scenarios, such as SSH, HTTP (port 80), MySQL, and more. These 
+        named groups provide a convenient way to quickly set up commonly used security group rules.
 
 ##### Deployment Process
 1. We started by initializing the Terraform configuration and validating it.<br/>
