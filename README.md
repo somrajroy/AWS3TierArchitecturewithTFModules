@@ -51,9 +51,19 @@ Terraform played a crucial role in the setup of the architecture. With Terraform
     - **Disadvantages**
      - Limited flexibility: While the module provides a lot of convenience, it might not cover every possible use case. Advanced users might find themselves 
        needing to customize it extensively. But this gets offset as developers can download and create in-house module for specific use case.
-    - Learning
+    - **Learning**
       - Understanding of AWS VPC architecture and subnets.
       - Familiarity with networking concepts like CIDR blocks, routing, and gateways.
+      - Module Creation: By studying the terraform-aws-modules/vpc/aws module, one can learn how to create your own Terraform modules. This can be 
+        valuable when one needs to abstract and reuse common infrastructure patterns in own projects.
+      - Module Composition: The module can serve as an example of how to compose multiple Terraform modules together to create a complete infrastructure setup. 
+        Understanding module composition can help build complex infrastructure setups with ease.
+      - Best Practices: By examining the module's code and documentation, one can learn about best practices for provisioning VPCs on AWS using Terraform. This 
+        includes considerations such as naming conventions, security configurations, and modularization techniques.
+      - In summary The terraform-aws-modules/vpc/aws module is a turn-key solution for provisioning VPCs on AWS using Terraform. It offers simplicity, 
+        consistency, and customizability, but may have some limitations in terms of flexibility and reliance on external maintenance. Studying this module can 
+        provide valuable insights into module creation, composition, and best practices for infrastructure provisioning on AWS.
+      
        
   - Module terraform-aws-modules/rds/aws : The terraform-aws-modules/rds/aws module simplifies the creation of Amazon RDS (Relational Database Service) instances 
     in AWS. The module allows you to configure essential RDS elements, including database type, size, storage, and backup settings.
@@ -76,8 +86,13 @@ Terraform played a crucial role in the setup of the architecture. With Terraform
      - Cost implications: Managed services like RDS come with additional costs compared to self-hosted databases on EC2 instances.
 
     - **Learning**
+      - Module Composition: By studying the structure of the terraform-aws-modules/rds/aws module, one can learn how to compose different Terraform modules 
+        together to create a complete RDS infrastructure setup. This understanding can be applied to building more complex infrastructure configurations.
       - Understanding of database concepts like instance size, storage, and backups.
-      - Knowledge of RDS features, such as multi-AZ deployments and parameter groups.
+      - Understanding of RDS features, such as multi-AZ deployments and parameter groups.
+      - Best Practices: The module can serve as a reference for implementing best practices when provisioning RDS instances on AWS. By examining the module's 
+        code and documentation, one can learn about security configurations, parameter groups, backup strategies, and other recommended practices for managing 
+        RDS instances.
      
     - Module terraform-aws-modules/security-group/aws : The terraform-aws-modules/security-group/aws module simplifies the setup of AWS Security Groups. Security 
       Groups act as virtual firewalls for AWS resources, controlling inbound and outbound traffic.
