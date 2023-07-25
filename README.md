@@ -31,7 +31,7 @@ The Database tier used Amazon RDS for MySQL. It was deployed in a private subnet
 Terraform Configuration <br/>
 
 Our Terraform configuration was organized into different modules for VPC, EC2, ALB, RDS, and security groups. We used official AWS Terraform modules to simplify the setup. <br/>
-[Modularization in Terraform](https://developer.hashicorp.com/terraform/tutorials/modules/module) : This project is fully based on turn-key modules. The best part is that it can also be used to create opinionated modules very easily.Terraform modules are very useful, but they must add value. The value in a module, its opinions. If a module isn’t opinionated, then it isn’t adding value. Valuable modules are the ones that enforce policies and provide reusable building blocks. Customers should decide how things should be done and create a module to implement their own preferred approach. This project can serve as guide for the same.
+[Modularization in Terraform](https://developer.hashicorp.com/terraform/tutorials/modules/module) : This project is fully based on near turn-key modules. The best part is that it can also be used to create opinionated modules very easily.Terraform modules are very useful, but they must add value. The value in a module, its opinions. If a module isn’t opinionated, then it isn’t adding value. Valuable modules are the ones that enforce policies and provide reusable building blocks. Customers should decide how things should be done and create a module to implement their own preferred approach. This project can serve as guide for the same.
 
 
 ##### Terraform
@@ -70,15 +70,16 @@ Security was a crucial aspect of our setup. We implemented the following securit
 ##### Best Practices
 Here are some practices I followed during the project that could be helpful:
 
- - Terraform modules registry: The project leverages the [Official Terraform module registry](https://registry.terraform.io/) to find and apply pre-built modules to provide a turn-key solutions. Other than 
-   this we can also use modules from the Terraform community.
+ - Terraform modules registry: The project leverages the [Official Terraform module registry](https://registry.terraform.io/) to find and apply pre-built modules to 
+   provide a turn-key solutions. Other than this we can also use modules from the Terraform community. Open-source modules saves time, improves security, and give greater 
+   confidence in project infrastructure. Importantly these reusable modules encourage best practices
  - Modules : A Terraform module is a way of creating a template of a cloud pattern, parameterizing, and reusing it.This project is built on modules to increase code 
    reusability and decrease code redundancy. Modules breaks down complex configurations into smaller configs for reusability and maintainability. It 
    streamlines the provisioning and management of infrastructure, resulting in more efficient and dependable operations.
  - Leverage Official Open Source Modules : We fully leveraged open source modules provided freely by Hashicorp. This helps the team to scale faster as every developer   
    is likely to be familiar with an open source module (unlike bespoke modules) resulting new staff enrolment to be quicker. Another big advantage is that development team 
    now can easily create opinionated modules from these open source modules which can serve a specific purpose (instead of starting from scratch). If they think these open 
-   source modules to be too broad they can create in-house opinionated modules for specific use case to make them simpler to use and maintain.
+   source modules to be too broad they can create in-house opinionated modules for specific use case. Open-source modules are highly configurable & easy to make more configurable.
  - Don’t Repeat Yourself (DRY) : One of the principles of software engineering is DRY (don’t repeat yourself). The same applies to IaC. In this project we applied 
    Modularization (official Terraform modules) to achieve DRY state.  
  - Variable : Used variables to customize infrastructure and avoid hardcoding values in the configuration file.
