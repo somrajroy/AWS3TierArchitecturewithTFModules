@@ -19,18 +19,18 @@ Before getting started, I needed to have the following prerequisites in place:
 
 ##### Architecture Design
 
-Web Tier <br/>
+**Web Tier** <br/>
 The Web tier is responsible for handling client traffic. We deployed Amazon EC2 servers in a private subnet to host the web servers. It was accessible through an Application Load Balancer (ALB). <br/>
 
-Application Tier <br/>
+**Application Tier** <br/>
 The Application tier consists of one or more EC2 instances deployed in a private subnet. We installed the necessary application components (e.g., PHP) on these instances.<br/>
 
-Database Tier <br/>
+**Database Tier** <br/>
 The Database tier used Amazon RDS for MySQL. It was deployed in a private subnet to ensure security. <br/>
 
-Terraform Configuration <br/>
+**Terraform Configuration** <br/>
 
-Our Terraform configuration was organized into different modules for VPC, EC2, ALB, RDS, and security groups. We used official AWS Terraform modules to simplify the setup. <br/>
+The Terraform configuration was organized into different modules for VPC, EC2, ALB, RDS, and security groups. We used official AWS Terraform modules to simplify the setup. <br/>
 [Modularization in Terraform](https://developer.hashicorp.com/terraform/tutorials/modules/module) : This project is fully based on near turn-key modules. The best part is that it can also be used to create opinionated modules very easily.Terraform modules are very useful, but they must add value. The value in a module, its opinions. If a module isn’t opinionated, then it isn’t adding value. Valuable modules are the ones that enforce policies and provide reusable building blocks. Customers should decide how things should be done and create a module to implement their own preferred approach. This project can serve as guide for the same.
 
 
@@ -38,17 +38,17 @@ Our Terraform configuration was organized into different modules for VPC, EC2, A
 Terraform played a crucial role in the setup of the architecture. With Terraform's declarative syntax, we were able to define our infrastructure as code. We created configuration files that specified the desired state of our AWS resources, including VPC, RDS database, security groups, and more. Terraform then took care of provisioning and managing these resources in a repeatable and consistent manner. The Terraform modules are elaborated below.
 
  - terraform-aws-modules/vpc/aws : The terraform-aws-modules/vpc/aws module is designed to create a Virtual Private Cloud (VPC) in AWS. A VPC is a logically isolated section of the AWS cloud where you can launch resources, such as Amazon EC2 instances and RDS databases. This module abstracts the complexities of creating a VPC and provides a simple, reusable configuration. It provides a set of configurable options for creating a VPC, including the number of subnets, the IP address range, and the availability zones. The module also creates the necessary resources for the VPC, such as internet gateways, route tables, and security groups.
-   - Features
+   - **Features**
      - Creation of public and private subnets across multiple Availability Zones (AZs).
      - Default configuration for internet and NAT gateways to enable public and private network access.
      - Customizable CIDR blocks for VPC and subnets.
      - Built-in tagging for resources to improve organization and management.
-   - Advantages
+   - **Advantages**
      - Turn-key solution: The module simplifies the creation of a VPC by providing a pre-configured setup. Users can easily customize it based on their   
        requirements.
      - Reusability: Since the module is parameterized and allows for variable customization, you can use it across multiple projects without having to rewrite 
        the VPC setup code.
-    - Disadvantages
+    - **Disadvantages**
      - Limited flexibility: While the module provides a lot of convenience, it might not cover every possible use case. Advanced users might find themselves 
        needing to customize it extensively. But this gets offset as developers can download and create in-house module for specific use case.
     - Learning
@@ -58,7 +58,7 @@ Terraform played a crucial role in the setup of the architecture. With Terraform
   - Module terraform-aws-modules/rds/aws : The terraform-aws-modules/rds/aws module simplifies the creation of Amazon RDS (Relational Database Service) instances 
     in AWS. The module allows you to configure essential RDS elements, including database type, size, storage, and backup settings.
 
-     - Advantages
+     - **Advantages**
      - Turn-key solution: The module abstracts the complexities of setting up an RDS instance, making it easy for customers to deploy and manage databases.
      - Consistency: Using this module ensures that RDS instances are consistently deployed across different environments.
      - Simplified RDS setup: The module handles the complexity of creating an RDS instance, including the configuration of necessary resources such as security  
@@ -71,11 +71,11 @@ Terraform played a crucial role in the setup of the architecture. With Terraform
        RDS expenses.
      - Security and Compliance: The module includes features such as security group configurations and subnet groups, helping customers to implement security and 
        compliance measures for RDS instances.
-    - Disadvantages
+    - **Disadvantages**
      - Limited customization: While the module covers common RDS use cases, it might not cater to highly specialized database configurations.
      - Cost implications: Managed services like RDS come with additional costs compared to self-hosted databases on EC2 instances.
 
-    - Learning
+    - **Learning**
       - Understanding of database concepts like instance size, storage, and backups.
       - Knowledge of RDS features, such as multi-AZ deployments and parameter groups.
      
