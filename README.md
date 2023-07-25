@@ -46,11 +46,14 @@ Terraform played a crucial role in the setup of the architecture. With Terraform
    - Advantages
      - Turn-key solution: The module simplifies the creation of a VPC by providing a pre-configured setup. Users can easily customize it based on their   
        requirements.
-     - Reusability: Since the module is parameterized and allows for variable customization, you can use it across multiple projects without having to rewrite the  
-       VPC setup code.
+     - Reusability: Since the module is parameterized and allows for variable customization, you can use it across multiple projects without having to rewrite 
+       the VPC setup code.
     - Disadvantages
      - Limited flexibility: While the module provides a lot of convenience, it might not cover every possible use case. Advanced users might find themselves 
-       needing to customize it extensively.  
+       needing to customize it extensively. But this gets offset as developers can download and create in-house module for specific use case.
+       
+  - Module terraform-aws-modules/rds/aws : The terraform-aws-modules/rds/aws module simplifies the creation of Amazon RDS (Relational Database Service) instances 
+    in AWS. 
 
 
 ##### Deployment Process
