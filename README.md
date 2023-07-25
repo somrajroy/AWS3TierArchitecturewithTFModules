@@ -31,7 +31,7 @@ The Database tier used Amazon RDS for MySQL. It was deployed in a private subnet
 Terraform Configuration <br/>
 
 Our Terraform configuration was organized into different modules for VPC, EC2, ALB, RDS, and security groups. We used official AWS Terraform modules to simplify the setup. <br/>
-Modularization in Terraform : This project is fully based on turn-key modules. The best part is that it can also be used to create opinionated modules very easily.Terraform modules are very useful, but they must add value. The value in a module, its opinions. If a module isn’t opinionated, then it isn’t adding value. Valuable modules are the ones that enforce policies and provide reusable building blocks. Customers should decide how things should be done and create a module to implement their own preferred approach. This project can serve as guide for the same.
+[Modularization in Terraform](https://developer.hashicorp.com/terraform/tutorials/modules/module) : This project is fully based on turn-key modules. The best part is that it can also be used to create opinionated modules very easily.Terraform modules are very useful, but they must add value. The value in a module, its opinions. If a module isn’t opinionated, then it isn’t adding value. Valuable modules are the ones that enforce policies and provide reusable building blocks. Customers should decide how things should be done and create a module to implement their own preferred approach. This project can serve as guide for the same.
 
 
 ##### Terraform
@@ -70,7 +70,7 @@ Security was a crucial aspect of our setup. We implemented the following securit
 ##### Best Practices
 Here are some practices I followed during the project that could be helpful:
 
- - Terraform modules registry: The project leverages the Official Terraform module registry to find and apply pre-built modules to provide a turn-key solutions. Other than 
+ - Terraform modules registry: The project leverages the [Official Terraform module registry](https://registry.terraform.io/) to find and apply pre-built modules to provide a turn-key solutions. Other than 
    this we can also use modules from the Terraform community.
  - Modules : A Terraform module is a way of creating a template of a cloud pattern, parameterizing, and reusing it.This project is built on modules to increase code 
    reusability and decrease code redundancy. Modules breaks down complex configurations into smaller configs for reusability and maintainability. It 
