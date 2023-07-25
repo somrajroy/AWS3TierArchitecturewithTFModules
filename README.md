@@ -51,10 +51,36 @@ Terraform played a crucial role in the setup of the architecture. With Terraform
     - Disadvantages
      - Limited flexibility: While the module provides a lot of convenience, it might not cover every possible use case. Advanced users might find themselves 
        needing to customize it extensively. But this gets offset as developers can download and create in-house module for specific use case.
+    - Learning
+      - Understanding of AWS VPC architecture and subnets.
+      - Familiarity with networking concepts like CIDR blocks, routing, and gateways.
        
   - Module terraform-aws-modules/rds/aws : The terraform-aws-modules/rds/aws module simplifies the creation of Amazon RDS (Relational Database Service) instances 
-    in AWS. 
+    in AWS. The module allows you to configure essential RDS elements, including database type, size, storage, and backup settings.
 
+     - Advantages
+     - Turn-key solution: The module abstracts the complexities of setting up an RDS instance, making it easy for customers to deploy and manage databases.
+     - Consistency: Using this module ensures that RDS instances are consistently deployed across different environments.
+     - Simplified RDS setup: The module handles the complexity of creating an RDS instance, including the configuration of necessary resources such as security  
+       groups and subnet groups.
+      - Modularity: The module follows a modular approach, allowing developers to reuse and customize specific components of the RDS setup according to specific
+        requirements.
+     - Standardization: The module adheres to best practices and provides a standardized configuration for creating RDS instances, ensuring consistency across 
+       different projects and environments.
+     - Cost optimization: The module includes options to configure auto-scaling, backup retention, and other cost-saving features, enabling clients to optimize 
+       RDS expenses.
+     - Security and Compliance: The module includes features such as security group configurations and subnet groups, helping customers to implement security and 
+       compliance measures for RDS instances.
+    - Disadvantages
+     - Limited customization: While the module covers common RDS use cases, it might not cater to highly specialized database configurations.
+     - Cost implications: Managed services like RDS come with additional costs compared to self-hosted databases on EC2 instances.
+
+    - Learning
+      - Understanding of database concepts like instance size, storage, and backups.
+      - Knowledge of RDS features, such as multi-AZ deployments and parameter groups.
+     
+    - Module terraform-aws-modules/security-group/aws : The terraform-aws-modules/security-group/aws module simplifies the setup of AWS Security Groups. Security 
+      Groups act as virtual firewalls for AWS resources, controlling inbound and outbound traffic.
 
 ##### Deployment Process
 1. We started by initializing the Terraform configuration and validating it.<br/>
