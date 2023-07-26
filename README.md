@@ -110,7 +110,7 @@ Terraform played a crucial role in the setup of the architecture. With Terraform
 
 ##### Deployment Process
 1. Once deployed, we accessed the application through the ALB's DNS name. <br/>
-2. To access the admin page we navigated to <<ALB DNS>>/phpinfo.php
+2. To access the admin page we navigated to < < ALB DNS > >/phpinfo.php
 
 ##### Security Considerations
 
