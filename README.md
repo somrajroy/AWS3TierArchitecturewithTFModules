@@ -16,6 +16,11 @@ Before getting started, I needed to have the following prerequisites in place:
 - AWS account with necessary permissions <br/>
 - Terraform installed on local machine <br/>
 - AWS CLI configured with appropriate credentials <br/>
+##### Architecture Diagram
+Below is the sample architecture diagram.
+
+![image](https://github.com/somrajroy/AWS3TierArchitecturewithTFModules/assets/92582005/e331b49b-5e6f-48ae-8fb2-a76a02adb450)
+<br/>
 
 ##### Architecture Design
 
