@@ -113,7 +113,7 @@ Terraform played a crucial role in the setup of the architecture. With Terraform
 2. To access the admin page we navigated to < < ALB DNS > >/phpinfo.php
 
 ##### Best Practices
-Here are some practices I followed during the project that could be helpful:
+Here are some practices followed during the project :
 
  - Terraform modules registry: The project leverages the [Official Terraform module registry](https://registry.terraform.io/) to find and apply pre-built modules to 
    provide a turn-key solutions. Other than this we can also use modules from the Terraform community. Open-source modules saves time, improves security, and give greater 
@@ -127,12 +127,13 @@ Here are some practices I followed during the project that could be helpful:
    source modules to be too broad they can create in-house opinionated modules for specific use case. Open-source modules are highly configurable & easy to make more configurable.
  - Don’t Repeat Yourself (DRY) : One of the principles of software engineering is DRY (don’t repeat yourself). The same applies to IaC. In this project we applied 
    Modularization (official Terraform modules) to achieve DRY state.  
- - Variable : Used variables to customize infrastructure and avoid hardcoding values in the configuration file.
+ - Variable : Used variables to customize infrastructure and avoid hardcoding values in the configuration file. The naming conventions were also consistent as 
+   official terraform modules were used.
  - Remote state storage: The Terraform state files are stored in a remote location (AWS S3) to enable collaboration and ensure consistency.
  - This project uses proper naming conventions for resources to avoid naming conflicts.
  - Use version controls Git as single source of truth. We have stored Terraform configurations in a version control system (Github) to track changes and collaborate with 
    others.
- - Leverage terraform.tfvars files : We put everything that’s not a secret in tfvars files for all inputs and then put them in source control (Github). 
+ - Leverage terraform.tfvars files : Everything that’s not a secret was put in tfvars files for all inputs and then put them in source control (Github). 
 
 ##### Conclusion
 
