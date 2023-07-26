@@ -1,7 +1,7 @@
 #### Setting up a Three-tier Architecture in AWS using Terraform using official AWS Terraform modules (LAMP stack). 
 ##### Introduction
 
-Welcome to my blog post where I will be sharing my experience of creating a Three-tier architecture in AWS using Terraform and the LAMP stack. All using offcial AWS Terraform modules.  In this post, I will walk you through the steps I followed to set up the architecture and provide insights into the process. The project aimed to create a scalable, secure, and high-performing web application environment. <br/>
+In this post we will be sharing the experience of creating a Three-tier architecture in AWS using Terraform and the LAMP stack. All AWS Infrastructure implementation was done using offcial AWS Terraform modules.  The project aimed to create a scalable, secure, and high-performing web application environment. <br/>
 ##### Project Overview
 
 A Three-tier architecture is a widely adopted approach for building scalable web applications. It separates the application into three layers: presentation, application logic, and database. In our implementation, we utilized AWS services to create these layers and ensure scalability and high availability. <br/>
