@@ -112,15 +112,6 @@ Terraform played a crucial role in the setup of the architecture. With Terraform
 1. Once deployed, we accessed the application through the ALB's DNS name. <br/>
 2. To access the admin page we navigated to < < ALB DNS > >/phpinfo.php
 
-##### Security Considerations
-
-Security was a crucial aspect of our setup. We implemented the following security measures: <br/>
-
-- Limited access to the Web tier via security groups and an ALB. <br/>
-- Restricted direct access to the Application and Database tiers by placing them in private subnets. <br/>
-- Used network ACLs to control traffic at the subnet level. <br/>
-- Configured IAM roles and policies for EC2 instances to access other AWS services securely. <br/>
-
 ##### Best Practices
 Here are some practices I followed during the project that could be helpful:
 
