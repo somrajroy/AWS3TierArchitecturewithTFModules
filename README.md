@@ -162,11 +162,9 @@ Setting up a Three-tier architecture in AWS using Terraform & LAMP stack was an 
 
 Below are some additional resources and references for further learning: <br/>
 
-1. [Install LAMP on Amazon Linux 2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html)<br/>
-2. [Install LAMP on Amazon Linux 2023](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2023.html) <br/>
-3. [Opinionated Terraform Best Practices and Anti-Patterns](https://www.hashicorp.com/resources/opinionated-terraform-best-practices-and-anti-patterns)<br/>
-4. [Terraform Modules on AWS](https://www.hashicorp.com/blog/terraform-modules-on-aws)<br/>
-5. [Terraform: Beyond the Basics with AWS](https://aws.amazon.com/blogs/apn/terraform-beyond-the-basics-with-aws/)<br/>
-6. [Module Creation - Recommended Pattern](https://developer.hashicorp.com/terraform/tutorials/modules/pattern-module-creation)<br/>
-7. [Best practices for using Terraform - from Google](https://cloud.google.com/docs/terraform/best-practices-for-terraform)<br/>
-8- [Terraform best Practices - Anton Babenko](https://www.terraform-best-practices.com/)<br/>
+1. [Opinionated Terraform Best Practices and Anti-Patterns](https://www.hashicorp.com/resources/opinionated-terraform-best-practices-and-anti-patterns)<br/>
+2. [Terraform Modules on AWS](https://www.hashicorp.com/blog/terraform-modules-on-aws)<br/>
+3. [Terraform: Beyond the Basics with AWS](https://aws.amazon.com/blogs/apn/terraform-beyond-the-basics-with-aws/)<br/>
+4. [Module Creation - Recommended Pattern](https://developer.hashicorp.com/terraform/tutorials/modules/pattern-module-creation)<br/>
+5. [Best practices for using Terraform - from Google](https://cloud.google.com/docs/terraform/best-practices-for-terraform)<br/>
+6- [Terraform best Practices - Anton Babenko](https://www.terraform-best-practices.com/)<br/>
