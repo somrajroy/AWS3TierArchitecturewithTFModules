@@ -35,7 +35,7 @@ The Database tier used Amazon RDS for MySQL. It was deployed in a private subnet
 
 **Terraform Configuration** <br/>
 
-The Terraform configuration was organized into different modules for VPC, EC2, ALB, RDS, and security groups. [Official AWS Terraform modules are used](https://www.hashicorp.com/blog/terraform-modules-on-aws) to create the entire infrastructure. <br/>
+The Terraform configuration was organized into different modules for VPC, EC2, ALB, RDS, and security groups. [Official AWS Terraform modules are used](https://www.hashicorp.com/blog/terraform-modules-on-aws) to create the entire infrastructure. <br/><br/>
 [Modularization in Terraform](https://developer.hashicorp.com/terraform/tutorials/modules/module) : This project is fully based on near turn-key modules. The best part is that it can also be used to create opinionated modules very easily. Valuable modules are the ones that are configurable and provide reusable building blocks. Customers should decide how things should be done and create a module to implement their own preferred approach. This project can serve as guide for the same.
 
 ##### Terraform
