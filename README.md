@@ -55,12 +55,11 @@ The Database tier used Amazon RDS for MySQL. It was deployed in a private subnet
 **Terraform Configuration** <br/>
 
 The Terraform configuration was organized into different modules for VPC, EC2, ALB, RDS, and security groups. [Official AWS Terraform modules are used](https://www.hashicorp.com/blog/terraform-modules-on-aws) to create the entire infrastructure. <br/><br/>
-[Modularization in Terraform](https://developer.hashicorp.com/terraform/tutorials/modules/module) : This project is fully based on near turn-key modules. The best part is that it can also be used to [create opinionated modules very easily because the official modules gives a very convinient starting point](https://www.hashicorp.com/resources/opinionated-terraform-best-practices-and-anti-patterns). Valuable modules are the ones that are configurable and provide reusable building blocks. Customers should decide how things should be done and create a module to implement their own preferred approach. This project can serve as guide for the same.
+[Modularization](https://developer.hashicorp.com/terraform/tutorials/modules/module) : This project is fully based on near turn-key modules. The best part is that it can also be used to [create opinionated modules very easily because these modules gives a very convinient starting point](https://www.hashicorp.com/resources/opinionated-terraform-best-practices-and-anti-patterns). Valuable modules are the ones that are configurable and provide reusable building blocks. Customers should decide how things should be done and create a module to implement their own preferred approach. This project can serve as guide for the same.<br/>
 
-##### Terraform
-This architecture is set up using Terraform. With Terraform's declarative syntax, we were able to define our infrastructure as code. We created configuration files that specified the desired state of our AWS resources, including VPC, RDS database, security groups, and more. Terraform then took care of provisioning and managing these resources in a repeatable and consistent manner. The Terraform modules are elaborated below.
+With Terraform's declarative syntax, we were able to define our infrastructure as code. We created configuration files that specified the desired state of our AWS resources, including VPC, RDS database, security groups, and more. Terraform then took care of provisioning and managing these resources in a repeatable and consistent manner. The Terraform modules are elaborated below with benefits.
 
- - terraform-aws-modules/vpc/aws : The terraform-aws-modules/vpc/aws module is designed to create a Virtual Private Cloud (VPC) in AWS. A VPC is a logically isolated section of the AWS cloud where you can launch resources, such as Amazon EC2 instances and RDS databases. This module abstracts the complexities of creating a VPC and provides a simple, reusable configuration. It provides a set of configurable options for creating a VPC, including the number of subnets, the IP address range, and the availability zones. The module also creates the necessary resources for the VPC, such as internet gateways, route tables, and security groups.
+ - **terraform-aws-modules/vpc/aws** : The terraform-aws-modules/vpc/aws module is designed to create a Virtual Private Cloud (VPC) in AWS. A VPC is a logically isolated section of the AWS cloud where you can launch resources, such as Amazon EC2 instances and RDS databases. This module abstracts the complexities of creating a VPC and provides a simple, reusable configuration. It provides a set of configurable options for creating a VPC, including the number of subnets, the IP address range, and the availability zones. The module also creates the necessary resources for the VPC, such as internet gateways, route tables, and security groups.
    - **Features**
      - Creation of public and private subnets across multiple Availability Zones (AZs).
      - Default configuration for internet and NAT gateways to enable public and private network access.
@@ -88,7 +87,7 @@ This architecture is set up using Terraform. With Terraform's declarative syntax
         provide valuable insights into module creation, composition, and best practices for infrastructure provisioning on AWS.
       
        
-  - Module terraform-aws-modules/rds/aws : The terraform-aws-modules/rds/aws module simplifies the creation of Amazon RDS (Relational Database Service) instances 
+  - Module **terraform-aws-modules/rds/aws** : The terraform-aws-modules/rds/aws module simplifies the creation of Amazon RDS (Relational Database Service) instances 
     in AWS. The module allows you to configure essential RDS elements, including database type, size, storage, and backup settings.
 
      - **Advantages**
@@ -117,7 +116,7 @@ This architecture is set up using Terraform. With Terraform's declarative syntax
         code and documentation, one can learn about security configurations, parameter groups, backup strategies, and other recommended practices for managing 
         RDS instances.
      
-    - Module terraform-aws-modules/security-group/aws : The terraform-aws-modules/security-group/aws module simplifies the creation and management of AWS 
+    - Module **terraform-aws-modules/security-group/aws** : The terraform-aws-modules/security-group/aws module simplifies the creation and management of AWS 
       Security Groups. It provides a variety of features and options for configuring security group rules, allowing to define ingress and egress traffic 
       permissions for AWS Infra resources.
     - **Features**
@@ -131,7 +130,7 @@ This architecture is set up using Terraform. With Terraform's declarative syntax
 2. To access the admin page we navigated to < < ALB DNS > >/phpinfo.php
 
 ##### Best Practices
-Here are some practices followed during the project :
+Other than what mentioned earlier - below are some practices followed during the project :
 
  - Terraform modules registry: The project leverages the [Official Terraform module registry](https://registry.terraform.io/) to find and apply pre-built modules to 
    provide a turn-key solutions. Other than this we can also use modules from the Terraform community. Open-source modules saves time, improves security, and give greater 
