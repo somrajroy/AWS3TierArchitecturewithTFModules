@@ -135,13 +135,15 @@ Other than what mentioned earlier - below are some practices followed during the
  - Terraform modules registry: The project leverages the [Official Terraform module registry](https://registry.terraform.io/) to find and apply pre-built modules to 
    provide a turn-key solutions. Other than this we can also use modules from the Terraform community. Open-source modules saves time, improves security, and give greater 
    confidence in project infrastructure. Importantly these reusable modules encourage best practices
- - Modules : A Terraform module is a way of creating a template of a cloud pattern, parameterizing, and reusing it.This project is built on modules to increase code 
+ - [Modules](https://developer.hashicorp.com/terraform/language/modules/develop#standard-module-structure) : A Terraform module is a way of creating a template of a cloud 
+   pattern, parameterizing, and reusing it.This project is built on modules to increase code 
    reusability and decrease code redundancy. Modules breaks down complex configurations into smaller configs for reusability and maintainability. It 
    streamlines the provisioning and management of infrastructure, resulting in more efficient and dependable operations.
  - Leverage Official Open Source Modules : We fully leveraged open source modules provided freely by Hashicorp. This helps the team to scale faster as every developer   
    is likely to be familiar with an open source module (unlike bespoke modules) resulting new staff enrolment to be quicker. Another big advantage is that development team 
    now can easily create opinionated modules from these open source modules which can serve a specific purpose (instead of starting from scratch). If they think these open 
-   source modules to be too broad they can create in-house opinionated modules for specific use case. Open-source modules are highly configurable & easy to make more configurable.
+   source modules to be too broad they can create in-house opinionated modules for specific use case. Open-source modules are highly configurable & easy to make more 
+   configurable.
  - Don’t Repeat Yourself (DRY) : One of the principles of software engineering is DRY (don’t repeat yourself). The same applies to IaC. In this project we applied 
    Modularization (official Terraform modules) to achieve DRY state.  
  - Variable : Used variables to customize infrastructure and avoid hardcoding values in the configuration file. The naming conventions were also consistent as 
