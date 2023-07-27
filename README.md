@@ -167,4 +167,4 @@ Below are some additional resources and references for further learning: <br/>
 3. [Terraform: Beyond the Basics with AWS](https://aws.amazon.com/blogs/apn/terraform-beyond-the-basics-with-aws/)<br/>
 4. [Module Creation - Recommended Pattern](https://developer.hashicorp.com/terraform/tutorials/modules/pattern-module-creation)<br/>
 5. [Best practices for using Terraform - from Google](https://cloud.google.com/docs/terraform/best-practices-for-terraform)<br/>
-6- [Terraform best Practices - Anton Babenko](https://www.terraform-best-practices.com/)<br/>
+6. [Terraform best Practices - Anton Babenko](https://www.terraform-best-practices.com/)<br/>
