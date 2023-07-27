@@ -7,15 +7,29 @@ For Terraform users, the [Terraform Registry enables](https://registry.terraform
 
 A Three-tier architecture is a widely adopted approach for building scalable web applications. It separates the application into three layers: presentation, application logic, and database. In othis project, we utilized AWS services to create these layers and ensure scalability and high availability. <br/>
 
-To build our three-tier architecture, we leveraged various AWS services. These included the use of [official AWS Terraform modules](https://www.hashicorp.com/blog/terraform-modules-on-aws) for VPC (Virtual Private Cloud), ALB, ASG, RDS , security groups, and more. By utilizing these services, we were able to establish a secure and reliable infrastructure for our application. There are quite a few benefits & advantages to refer and use official Terraform modules. The same value(benefits/advantages) can be passed on to customers & prject teams. Some of them are :
-    - Rapid Deployment and Scalability : The well-documented official modules abstracts away all the complexity of setting AWS resources - customers can experience a  
+To build our three-tier architecture, we leveraged various AWS services. These included the use of [official AWS Terraform modules](https://www.hashicorp.com/blog/terraform-modules-on-aws) for VPC (Virtual Private Cloud), ALB, ASG, RDS , security groups, and more. By utilizing these services, we were able to establish a secure and reliable infrastructure for our application. There are quite a few benefits & advantages to refer and use official Terraform modules. The same value(benefits/advantages) can be passed on to customers & prject teams. Some of them are :<br/>
+    - **Rapid Deployment and Scalability** : The well-documented official modules abstracts away all the complexity of setting AWS resources - customers can experience a  
       seamless and swift setup for their AWS architectures. The modules provide a standardized foundation, streamlining the deployment process and reducing the chances of 
-      errors or inconsistencies.
-    - Modular approach & best practices for AWS Architecture : By utilizing official AWS Terraform modules - the architecture benefits from tested and well-maintained code       that follows AWS best practices. These modules also allow different teams to work independently on specific parts of the system without interfering with each other. 
-      <br/>
-    - Learings for the teams : Modules in [official Terraform registry](https://registry.terraform.io/) are great news since developers and customers can now draw from the 
-      knowledge of the community that has already developed battle-tested modules. Moreover,  the “HashiCorp Verified Modules” means they are vetted and actively 
-      maintained and gives extra confidence.<br/>
+      errors or inconsistencies.<br/>
+    - **Modular approach & best practices for AWS Architecture** : By utilizing official AWS Terraform modules - the architecture benefits from tested and well-maintained 
+       code that follows AWS best practices. These modules also allow different teams to work independently on specific parts of the system without interfering with each 
+       other. <br/>
+    - **Scalability & Learnings for the teams** : Modules in [official Terraform registry](https://registry.terraform.io/) are great news since developers and customers 
+       can now draw from the knowledge of the community that has already developed battle-tested modules. Moreover,  the “HashiCorp Verified Modules” means they are vetted 
+       and actively maintained and gives extra confidence. These modules can also be easily extended & opinionated in-house modules can be built (instead of starting from 
+       scratch).Lastly, people from non-development background can also work easily.<br/>
+    - **Automation-first mindset**: By following a turn-key approach & leveraging pre-built official modules organizations can prioritze automating tasks wherever possible 
+        thereby increasing efficiency throughout. These modules are designed to be used out of the box, with minimal configuration needed to match specific use case. 
+        (where-ever required customers can easily create in-house modules because the official modules provide a very convenient starting point).<br/>
+    - **Security-First approach/mindset**: By leveraging the official AWS Terraform modules, customers benefit from industry-standard security practices which AWS 
+        recommends. <br/>
+    - **Simplicity & consitency**: The official Terraform modules provide a significant level of convenience, pre-configuration & and consistent patterns for 
+        infrastructure provisioning which helps accelerate the development and deployment process. <br/>
+    -  **Cost optimization & benefits which can be passed to customers** : AWS Terraform modules are designed to leverage AWS services in an optimized manner.  Official 
+        Terraform AWS modules helps reduce efforts and costs of implementation which can be passed to customers. Official modules are widely used and well-maintained, 
+        they are tested and validated for functionality and compatibility, saving development costs and avoiding potential issues down the line. All these beneits can be 
+        passed to customers<br/>
+    
 
 ##### Project Setup and Requirements
 Before getting started, I needed to have the following prerequisites in place: 
