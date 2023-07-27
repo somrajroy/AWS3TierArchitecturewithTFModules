@@ -2,13 +2,20 @@
 ##### Introduction
 
 In this post we will be sharing the experience of creating a Three-tier architecture in AWS using Terraform and the LAMP stack. All AWS Infrastructure implementation was done using offcial AWS Terraform modules.  The project aimed to create a scalable, secure, and high-performing web application environment. <br/>
+For Terraform users, the [Terraform Registry enables](https://registry.terraform.io/) the distribution of Terraform modules, which are reusable configurations. The Terraform Registry acts as a centralized repository for module sharing, making modules easier to discover and reuse. This project utilizes the offical Terraform modules<br/>
 ##### Project Overview
 
-A Three-tier architecture is a widely adopted approach for building scalable web applications. It separates the application into three layers: presentation, application logic, and database. In our implementation, we utilized AWS services to create these layers and ensure scalability and high availability. <br/>
+A Three-tier architecture is a widely adopted approach for building scalable web applications. It separates the application into three layers: presentation, application logic, and database. In othis project, we utilized AWS services to create these layers and ensure scalability and high availability. <br/>
 
-The Three-tier architecture consists of a Web tier, an Application tier, and a Database tier. The Web tier handles client requests and forwards them to the Application tier. The Application tier processes the requests and retrieves or updates data from the Database tier. We used Terraform and AWS to deploy and manage this architecture. <br/>
-
-To build our three-tier architecture, we leveraged various AWS services. These included the use of official AWS Terraform modules for VPC (Virtual Private Cloud), RDS (Relational Database Service), security groups, and more. By utilizing these services, we were able to establish a secure and reliable infrastructure for our application.
+To build our three-tier architecture, we leveraged various AWS services. These included the use of [official AWS Terraform modules](https://www.hashicorp.com/blog/terraform-modules-on-aws) for VPC (Virtual Private Cloud), ALB, ASG, RDS , security groups, and more. By utilizing these services, we were able to establish a secure and reliable infrastructure for our application. There are quite a few benefits & advantages to refer and use official Terraform modules. The same value(benefits/advantages) can be passed on to customers & prject teams. Some of them are :
+    - Rapid Deployment and Scalability : The well-documented official modules abstracts away all the complexity of setting AWS resources - customers can experience a  
+      seamless and swift setup for their AWS architectures. The modules provide a standardized foundation, streamlining the deployment process and reducing the chances of 
+      errors or inconsistencies.
+    - Modular approach & best practices for AWS Architecture : By utilizing official AWS Terraform modules - the architecture benefits from tested and well-maintained code       that follows AWS best practices. These modules also allow different teams to work independently on specific parts of the system without interfering with each other. 
+      <br/>
+    - Learings for the teams : Modules in [official Terraform registry](https://registry.terraform.io/) are great news since developers and customers can now draw from the 
+      knowledge of the community that has already developed battle-tested modules. Moreover,  the “HashiCorp Verified Modules” means they are vetted and actively 
+      maintained and gives extra confidence.<br/>
 
 ##### Project Setup and Requirements
 Before getting started, I needed to have the following prerequisites in place: 
