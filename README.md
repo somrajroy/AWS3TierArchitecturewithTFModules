@@ -1,8 +1,16 @@
-#### Setting up a Three-tier Architecture in AWS using Terraform & official AWS modules. 
+#### #Opensource Project to set up a Three-tier Architecture in AWS using Terraform & official AWS modules. 
 ##### Introduction
 
-In this post we will be sharing the experience of creating a Three-tier architecture in AWS using Terraform ([LAMP stack](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html)). All AWS Infrastructure implementation was done using offcial AWS Terraform modules.  The project aimed to create a scalable, secure, and high-performing web application environment. <br/>
+In this #opensource project we will be sharing the experience of creating a Three-tier architecture in AWS using Terraform ([LAMP stack](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html)). All AWS Infrastructure implementation was done using offcial AWS Terraform modules.  The project aimed to create a scalable, secure, and high-performing web application environment. <br/>
 For Terraform users, the [Terraform Registry enables](https://registry.terraform.io/) the distribution of Terraform modules, which are reusable configurations. The Terraform Registry acts as a centralized repository for module sharing, making modules easier to discover and reuse. This project utilizes the offical Terraform modules<br/>
+
+##### Overall learnings
+- Terraform structure and naming conventions & variable declarations <br/>
+- Clean code and reusable code in Terraform <br/>
+- Leverage [official Terraform Modules](https://www.hashicorp.com/blog/terraform-modules-on-aws) instead of reinventing the wheel <br/>
+- [Terraform remote state using AWS S3](https://developer.hashicorp.com/terraform/language/settings/backends/s3) and [state locking using Dynamodb](https://developer.hashicorp.com/terraform/language/settings/backends/configuration).<br/>
+- Terraform best Practices<br/>
+
 ##### Project Overview
 
 A Three-tier architecture is a widely adopted approach for building scalable web applications. It separates the application into three layers: presentation, application logic, and database. In this project, we utilized AWS services to create these layers and ensure scalability and high availability. <br/>
@@ -32,9 +40,10 @@ To build our three-tier architecture, we leveraged various AWS services. These i
     
 ##### Project Setup and Requirements
 - AWS account with necessary permissions <br/>
-- Terraform installed on local machine <br/>
-- AWS CLI configured with appropriate credentials <br/>
+- [Terraform installed on local machine](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) <br/>
+- [AWS CLI configured with appropriate credentials](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) <br/>
 - Download/Clone the source code and run 'terraform init/p;an/validate/apply'
+
 ##### Architecture Diagram
 Below is the sample architecture diagram.
 
