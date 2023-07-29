@@ -14,9 +14,8 @@ For Terraform users, the [Terraform Registry enables](https://registry.terraform
    reinventing the wheel <br/>
 - [Terraform remote state using AWS S3](https://developer.hashicorp.com/terraform/language/settings/backends/s3) and [state locking using Dynamodb](https://developer.hashicorp.com/terraform/language/settings/backends/configuration). To ensure the reliability and consistency of AWS infrastructure :- have implemented state storage in AWS S3 and DynamoDB. This provides with a secure and scalable mechanism for storing and retrieving critical state information.<br/>
 - `DRY and KISS principles of software development` : The official AWS Terraform modules in the Terraform Registry adhere to the DRY principle, promoting code 
-   reusability and minimizing duplication enabling development teams to avoid repetition and consolidate their infrastructure codebase efficiently. when the 
-   codebase is DRY then its easier to maintain and scale.
-  The modules also adhere to KISS principles (systems work best if they are kept simple rather than  
+   reusability and minimizing duplication enabling development teams to avoid repetition and consolidate their infrastructure codebase efficiently. When the 
+   codebase is DRY then its easier to maintain and scale. The modules also adhere to KISS principles (systems work best if they are kept simple rather than 
    complicated). Simplicity and elegance are core of the official AWS Terraform modules.  The modules encapsulate complex AWS resource configurations into 
    easy-to-use interfaces, where users only need to provide a few inputs to create or manage an AWS resource. These principles (DRY & KISS) are widely used in 
    the software development and are effective in improving code quality and reducing errors.  <br/>
