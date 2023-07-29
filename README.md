@@ -9,7 +9,7 @@ For Terraform users, the [Terraform Registry enables](https://registry.terraform
 - Terraform structure and naming conventions & variable declarations <br/>
 - Modular Flexibility: Discover the versatility of official AWS Terraform modules, enabling seamless customization and easy integration with specific needs.<br/>
 - Clean code and reusable code in Terraform. Leveraged [official Terraform Modules](https://www.hashicorp.com/blog/terraform-modules-on-aws) instead of reinventing the wheel <br/>
-- [Terraform remote state using AWS S3](https://developer.hashicorp.com/terraform/language/settings/backends/s3) and [state locking using Dynamodb](https://developer.hashicorp.com/terraform/language/settings/backends/configuration).<br/>
+- [Terraform remote state using AWS S3](https://developer.hashicorp.com/terraform/language/settings/backends/s3) and [state locking using Dynamodb](https://developer.hashicorp.com/terraform/language/settings/backends/configuration). To ensure the reliability and consistency of AWS infrastructure :- have implemented state storage in AWS S3 and DynamoDB. This provides with a secure and scalable mechanism for storing and retrieving critical state information.<br/>
 - Terraform best Practices<br/>
 
 ##### Project Overview
