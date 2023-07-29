@@ -7,10 +7,18 @@ For Terraform users, the [Terraform Registry enables](https://registry.terraform
 ##### Overall learnings
 - `Terraform Automation`: Experience the efficiency of infrastructure-as-code using Terraform. Rapidly deploy the complex Cloud architectures with ease.<br/>
 - Terraform structure and naming conventions & variable declarations <br/>
-- `Modular Flexibility`: Understand the efficiency & productivity of official AWS Terraform modules, enabling seamless customization and easy integration with specific needs.<br/>
-- `Clean code and reusable code in Terraform`. Leveraged [official Terraform Modules](https://www.hashicorp.com/blog/terraform-modules-on-aws) instead of reinventing the wheel <br/>
+- `Modular Flexibility`: Understand the efficiency & productivity of official AWS Terraform modules, enabling seamless customization and easy integration with 
+  specific needs. The DRY and KISS principles incorporated in the official AWS Terraform modules contribute to modular design and consistent approach. With 
+  reusable building blocks, development teams can create complex cloud infrastructures while maintaining a clean, uncluttered codebase.<br/>
+- `Clean code and reusable code in Terraform`. Leveraged [official Terraform Modules](https://www.hashicorp.com/blog/terraform-modules-on-aws) instead of 
+   reinventing the wheel <br/>
 - [Terraform remote state using AWS S3](https://developer.hashicorp.com/terraform/language/settings/backends/s3) and [state locking using Dynamodb](https://developer.hashicorp.com/terraform/language/settings/backends/configuration). To ensure the reliability and consistency of AWS infrastructure :- have implemented state storage in AWS S3 and DynamoDB. This provides with a secure and scalable mechanism for storing and retrieving critical state information.<br/>
-- Terraform best Practices<br/>
+- `DRY and KISS principles of software development` : The official AWS Terraform modules in the Terraform Registry adhere to the DRY principle, promoting code 
+   reusability and minimizing duplication enabling development teams to avoid repetition and consolidate their infrastructure codebase efficiently. when the 
+   codebase is DRY then its easier to maintain and scale. The modules also adhere to KISS principles (systems work best if they are kept simple rather than  
+   complicated). Simplicity and elegance are core of the official AWS Terraform modules.  The modules encapsulate complex AWS resource configurations into 
+   easy-to-use interfaces, where users only need to provide a few inputs to create or manage an AWS resource. <br/>
+- `Terraform best Practices`<br/>
 
 ##### Project Overview
 
