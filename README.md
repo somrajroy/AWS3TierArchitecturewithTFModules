@@ -80,6 +80,16 @@ The Terraform configuration was organized into different modules for VPC, EC2, A
 
 With Terraform's declarative syntax, we were able to define our infrastructure as code. We created configuration files that specified the desired state of our AWS resources, including VPC, RDS database, security groups, and more. Terraform then took care of provisioning and managing these resources in a repeatable and consistent manner. The Terraform modules are elaborated below with benefits.
 
+If required we can also add a module folder and shift the respective resources tf files to that folder <br/>
+
+**Handling sensitive data in Terraform modules** <br/>
+It is never a good practice to store sensitive information, such as access keys and passwords, in Terraform configuration files, where they could easily be exposed and shared into different configuration plans than they were intended for. Instead, a good practice is to create a file named `secrets.tfvars` to hold sensitive data, and place it in the root module folder in the top-level directory. This file should never be tracked in Git. Put the `secrets.tfvars` in `.gitignore` file. Declare tow variables `secret_key` and `access_key` in variables.tf file and then assign `secret_key` and `access_key` values in `secrets.tfvars` file.
+
+![image](https://github.com/somrajroy/AWS3TierArchitecturewithTFModules/assets/92582005/08c74328-9086-48fe-b358-8c7f510a7396) <br/>
+![image](https://github.com/somrajroy/AWS3TierArchitecturewithTFModules/assets/92582005/c4b2781f-1ca5-4328-b061-5c22542f12dc) <br/>
+
+
+
  - **terraform-aws-modules/vpc/aws** : The terraform-aws-modules/vpc/aws module is designed to create a Virtual Private Cloud (VPC) in AWS. A VPC is a logically isolated section of the AWS cloud where you can launch resources, such as Amazon EC2 instances and RDS databases. This module abstracts the complexities of creating a VPC and provides a simple, reusable configuration. It provides a set of configurable options for creating a VPC, including the number of subnets, the IP address range, and the availability zones. The module also creates the necessary resources for the VPC, such as internet gateways, route tables, and security groups.
    - **Features**
      - Creation of public and private subnets across multiple Availability Zones (AZs).
