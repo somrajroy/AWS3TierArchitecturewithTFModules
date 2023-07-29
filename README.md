@@ -5,7 +5,9 @@ In this #opensource project we will be sharing the experience of creating a Thre
 For Terraform users, the [Terraform Registry enables](https://registry.terraform.io/) the distribution of Terraform modules, which are reusable configurations. The Terraform Registry acts as a centralized repository for module sharing, making modules easier to discover and reuse. This project utilizes the offical Terraform modules<br/>
 
 ##### Overall learnings
+- Terraform Automation: Experience the efficiency of infrastructure-as-code using Terraform. Rapidly deploy the complex Cloud architecture ease.<br/>
 - Terraform structure and naming conventions & variable declarations <br/>
+- Modular Flexibility: Discover the versatility of official AWS Terraform modules, enabling seamless customization and easy integration with specific needs.<br/>
 - Clean code and reusable code in Terraform <br/>
 - Leverage [official Terraform Modules](https://www.hashicorp.com/blog/terraform-modules-on-aws) instead of reinventing the wheel <br/>
 - [Terraform remote state using AWS S3](https://developer.hashicorp.com/terraform/language/settings/backends/s3) and [state locking using Dynamodb](https://developer.hashicorp.com/terraform/language/settings/backends/configuration).<br/>
