@@ -3,6 +3,15 @@
 
 # Generic variables
 # east us has highest traffic and causes delay....selecting west...
+
+variable "access_key" {
+  description = "access key from aws management console"
+}
+
+variable "secret_key" {
+  description = "secret key from aws management console"
+}
+
 variable "region" {
   description = "Region code"
   type        = string
