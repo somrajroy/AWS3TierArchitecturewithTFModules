@@ -5,10 +5,10 @@ In this #opensource project we will be sharing the experience of creating a Thre
 For Terraform users, the [Terraform Registry enables](https://registry.terraform.io/) the distribution of Terraform modules, which are reusable configurations. The Terraform Registry acts as a centralized repository for module sharing, making modules easier to discover and reuse. This project utilizes the offical Terraform modules<br/>
 
 ##### Overall learnings
-- Terraform Automation: Experience the efficiency of infrastructure-as-code using Terraform. Rapidly deploy the complex Cloud architecture ease.<br/>
+- `Terraform Automation`: Experience the efficiency of infrastructure-as-code using Terraform. Rapidly deploy the complex Cloud architectures with ease.<br/>
 - Terraform structure and naming conventions & variable declarations <br/>
-- Modular Flexibility: Discover the versatility of official AWS Terraform modules, enabling seamless customization and easy integration with specific needs.<br/>
-- Clean code and reusable code in Terraform. Leveraged [official Terraform Modules](https://www.hashicorp.com/blog/terraform-modules-on-aws) instead of reinventing the wheel <br/>
+- `Modular Flexibility`: Understand the efficiency & productivity of official AWS Terraform modules, enabling seamless customization and easy integration with specific needs.<br/>
+- `Clean code and reusable code in Terraform`. Leveraged [official Terraform Modules](https://www.hashicorp.com/blog/terraform-modules-on-aws) instead of reinventing the wheel <br/>
 - [Terraform remote state using AWS S3](https://developer.hashicorp.com/terraform/language/settings/backends/s3) and [state locking using Dynamodb](https://developer.hashicorp.com/terraform/language/settings/backends/configuration). To ensure the reliability and consistency of AWS infrastructure :- have implemented state storage in AWS S3 and DynamoDB. This provides with a secure and scalable mechanism for storing and retrieving critical state information.<br/>
 - Terraform best Practices<br/>
 
@@ -17,7 +17,7 @@ For Terraform users, the [Terraform Registry enables](https://registry.terraform
 A Three-tier architecture is a widely adopted approach for building scalable web applications. It separates the application into three layers: presentation, application logic, and database. In this project, we utilized AWS services to create these layers and ensure scalability and high availability. <br/>
 
 To build our three-tier architecture, we leveraged various AWS services. These included the use of [official AWS Terraform modules](https://www.hashicorp.com/blog/terraform-modules-on-aws) for VPC (Virtual Private Cloud), ALB, ASG, RDS , security groups, and more. There are quite a few benefits & advantages to refer and use official Terraform modules (or open source modules). The value (benefits/advantages) can be passed on to customers & project teams. Some of them are :<br/>
-    - **Rapid Deployment and Scalability** : The well-documented modules abstracts away all the complexity of setting AWS resources - customers can experience a  
+    - `**Rapid Deployment and Scalability**` : The well-documented modules abstracts away all the complexity of setting AWS resources - customers can experience a  
       seamless and swift setup for their AWS architectures. The modules provide a standardized foundation, streamlining the deployment process and reducing the chances of 
       errors or inconsistencies.<br/>
     - **Modular approach & best practices for AWS Architecture** : By utilizing official AWS Terraform modules - the architecture benefits from tested and well-maintained 
