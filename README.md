@@ -17,7 +17,8 @@ For Terraform users, the [Terraform Registry enables](https://registry.terraform
    reusability and minimizing duplication enabling development teams to avoid repetition and consolidate their infrastructure codebase efficiently. when the 
    codebase is DRY then its easier to maintain and scale. The modules also adhere to KISS principles (systems work best if they are kept simple rather than  
    complicated). Simplicity and elegance are core of the official AWS Terraform modules.  The modules encapsulate complex AWS resource configurations into 
-   easy-to-use interfaces, where users only need to provide a few inputs to create or manage an AWS resource. <br/>
+   easy-to-use interfaces, where users only need to provide a few inputs to create or manage an AWS resource. These principles (DRY & KISS) are widely used in 
+   the software development and are effective in improving code quality and reducing errors.  <br/>
 - `Terraform best Practices`<br/>
 
 ##### Project Overview
