@@ -48,7 +48,7 @@ To build our three-tier architecture, we leveraged various AWS services. These i
         they are tested and validated for functionality and compatibility, saving development costs and avoiding potential issues down the line. All these beneits can be 
         passed to customers<br/>
     
-##### Project Setup and Requirements
+##### Project Setup and Prerequisites
 - AWS account with necessary permissions <br/>
 - [Terraform installed on local machine](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) <br/>
 - [AWS CLI configured with appropriate credentials](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) <br/>
