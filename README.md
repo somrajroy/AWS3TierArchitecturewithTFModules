@@ -90,7 +90,7 @@ It is never a good practice to store sensitive information, such as access keys 
 
 
 
- - **terraform-aws-modules/vpc/aws** : The terraform-aws-modules/vpc/aws module is designed to create a Virtual Private Cloud (VPC) in AWS. A VPC is a logically isolated section of the AWS cloud where you can launch resources, such as Amazon EC2 instances and RDS databases. This module abstracts the complexities of creating a VPC and provides a simple, reusable configuration. It provides a set of configurable options for creating a VPC, including the number of subnets, the IP address range, and the availability zones. The module also creates the necessary resources for the VPC, such as internet gateways, route tables, and security groups.
+ - Module `terraform-aws-modules/vpc/aws` : The terraform-aws-modules/vpc/aws module is designed to create a Virtual Private Cloud (VPC) in AWS. A VPC is a logically isolated section of the AWS cloud where you can launch resources, such as Amazon EC2 instances and RDS databases. This module abstracts the complexities of creating a VPC and provides a simple, reusable configuration. It provides a set of configurable options for creating a VPC, including the number of subnets, the IP address range, and the availability zones. The module also creates the necessary resources for the VPC, such as internet gateways, route tables, and security groups.
    - **Features**
      - Creation of public and private subnets across multiple Availability Zones (AZs).
      - Default configuration for internet and NAT gateways to enable public and private network access.
@@ -118,7 +118,7 @@ It is never a good practice to store sensitive information, such as access keys 
         provide valuable insights into module creation, composition, and best practices for infrastructure provisioning on AWS.
       
        
-  - Module **terraform-aws-modules/rds/aws** : The terraform-aws-modules/rds/aws module simplifies the creation of Amazon RDS (Relational Database Service) instances 
+  - Module `terraform-aws-modules/rds/aws` : The terraform-aws-modules/rds/aws module simplifies the creation of Amazon RDS (Relational Database Service) instances 
     in AWS. The module allows you to configure essential RDS elements, including database type, size, storage, and backup settings.
 
      - **Advantages**
@@ -147,7 +147,7 @@ It is never a good practice to store sensitive information, such as access keys 
         code and documentation, one can learn about security configurations, parameter groups, backup strategies, and other recommended practices for managing 
         RDS instances.
      
-    - Module **terraform-aws-modules/security-group/aws** : The terraform-aws-modules/security-group/aws module simplifies the creation and management of AWS 
+    - Module `terraform-aws-modules/security-group/aws` : The terraform-aws-modules/security-group/aws module simplifies the creation and management of AWS 
       Security Groups. It provides a variety of features and options for configuring security group rules, allowing to define ingress and egress traffic 
       permissions for AWS Infra resources.
     - **Features**
