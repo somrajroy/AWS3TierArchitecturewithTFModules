@@ -12,6 +12,7 @@ For Terraform users, the [Terraform Registry enables](https://registry.terraform
   reusable building blocks, development teams can create complex cloud infrastructures while maintaining a clean, uncluttered codebase.<br/>
 - `Clean code and reusable code in Terraform`. Leveraged [official Terraform Modules](https://www.hashicorp.com/blog/terraform-modules-on-aws) instead of 
    reinventing the wheel <br/>
+- `Handling sensitive data in Terraform modules like secret key, access key and passwords` <br/> 
 - [Terraform remote state using AWS S3](https://developer.hashicorp.com/terraform/language/settings/backends/s3) and [state locking using Dynamodb](https://developer.hashicorp.com/terraform/language/settings/backends/configuration). To ensure the reliability and consistency of AWS infrastructure :- have implemented state storage in AWS S3 and DynamoDB. This provides with a secure and scalable mechanism for storing and retrieving critical state information.<br/>
 - `DRY and KISS principles of software development` : The official AWS Terraform modules in the Terraform Registry adhere to the DRY principle, promoting code 
    reusability and minimizing duplication enabling development teams to avoid repetition and consolidate their infrastructure codebase efficiently. When the 
