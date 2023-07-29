@@ -43,6 +43,8 @@ To build our three-tier architecture, we leveraged various AWS services. These i
 - AWS account with necessary permissions <br/>
 - [Terraform installed on local machine](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) <br/>
 - [AWS CLI configured with appropriate credentials](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) <br/>
+- Create a bucket in AWS S3 pass it to parameter 'bucket' in file `backend.tf` <br/>
+- Create a Dynamodb table with default values and key as LockID and pass the table name to parameter 'dynamodb_table' in file 'backend.tf'<br/>
 - Download/Clone the source code and run 'terraform init/p;an/validate/apply'
 
 ##### Architecture Diagram
