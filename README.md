@@ -153,15 +153,16 @@ Other than what mentioned earlier - below are some practices followed during the
    now can easily create opinionated modules from these open source modules which can serve a specific purpose (instead of starting from scratch). If they think these open 
    source modules to be too broad they can create in-house opinionated modules for specific use case. Open-source modules are highly configurable & easy to make more 
    configurable.
- - Don’t Repeat Yourself (DRY) : One of the principles of software engineering is DRY (don’t repeat yourself). The same applies to IaC. In this project we applied 
-   Modularization (official Terraform modules) to achieve DRY state.  
- - Variable : Used variables to customize infrastructure and avoid hardcoding values in the configuration file. The naming conventions were also consistent as 
-   official terraform modules were used.
+ - Don’t Repeat Yourself (DRY) : One of the principles of software engineering is DRY (don’t repeat yourself). The same applies to IaC. In this project we 
+   applied Modularization (official Terraform modules) to achieve DRY state.  
  - Remote state storage: The Terraform state files are stored in a remote location (AWS S3) to enable collaboration and ensure consistency.
  - This project uses proper naming conventions for resources to avoid naming conflicts.
  - Use version controls Git as single source of truth. We have stored Terraform configurations in a version control system (Github) to track changes and collaborate with 
    others.
- - Leverage terraform.tfvars files : Everything that’s not a secret was put in tfvars files for all inputs and then put them in source control (Github). 
+ - Leverage variables.tf & terraform.tfvars files : Used variables to customize infrastructure and avoid hardcoding values in the configuration file. The naming 
+   conventions were also consistent as official terraform modules were used. Variable.tf and terraform.tfvars files are excellent for externalizing 
+   configurations and passing values so they can be easily deployed across multiple environments. Everything that’s not a secret was put in tfvars files for all 
+   inputs and then put them in source control (Github). <br/>
 
 ##### Conclusion
 
