@@ -32,11 +32,13 @@ To build our three-tier architecture, we leveraged various AWS services. These i
       errors or inconsistencies.<br/>
     - `Modular approach & best practices for AWS Architecture` : By utilizing official AWS Terraform modules - the architecture benefits from tested and well-maintained 
        code that follows AWS best practices. These modules also allow different teams to work independently on specific parts of the system without interfering with each 
-       other. <br/>
+       other. We have the benefit of using battle-tested, production-hardened code without having to write it ourselves (we can modify it as required to build in-hosue 
+      modules very easily).<br/>
     - `Scalability & Learnings for the teams` : Modules in [official Terraform registry](https://registry.terraform.io/) are great since developers and customers 
        can now draw from the knowledge of the community that has already developed battle-tested modules. Moreover,  the “HashiCorp Verified Modules” means they are vetted 
        and actively maintained and gives extra confidence. These modules can also be easily extended & opinionated to build in-house modules (instead of starting from 
-       scratch).Lastly, people from non-development background can also learn & work easily.<br/>
+       scratch).Lastly, people from non-development background can also learn & work easily. They don’t need to know how a module works (or complex programming) to be able 
+       to use a module; they just have to know how to set inputs and outputs. <br/>
     - `Automation-first mindset`: By following a turn-key approach & leveraging pre-built official modules organizations can prioritze automating tasks wherever possible 
         thereby increasing efficiency throughout. These modules are designed to be used out of the box, with minimal configuration needed to match specific use case. 
         (where-ever required customers can easily create in-house modules because the official modules provide a very convenient starting point).<br/>
@@ -46,9 +48,10 @@ To build our three-tier architecture, we leveraged various AWS services. These i
         infrastructure provisioning which helps accelerate the development and deployment process. <br/>
     - `Documentation and versioning` : these remote modules are very well documented and versioned. Anyone new can easily scale up & be productive at the earliest.<br/>
     -  `Cost optimization & benefits which can be passed to customers` : AWS Terraform modules are designed to leverage AWS services in an optimized manner.  Official 
-        Terraform AWS modules helps reduce efforts and costs of implementation which can be passed to customers. Official modules are widely used and well-maintained, 
-        they are tested and validated for functionality and compatibility, saving development costs and avoiding potential issues down the line. All these benefits can be 
-        passed to customers<br/>
+        Terraform AWS modules helps reduce efforts and costs of implementation which can be passed to customers. We can save a lot of time by using these open source 
+        modules instead of writing comparable code ourselves; all it takes is learning how to use the module interface. Official modules are widely used and well- 
+        maintained, they are tested and validated for functionality and compatibility, saving development costs and avoiding potential issues down the line. All these 
+        benefits can be passed to customers<br/>
     
 ##### Project Setup and Prerequisites
 - AWS account with necessary permissions <br/>
@@ -169,7 +172,7 @@ Other than what mentioned earlier - below are some practices followed during the
    provide a turn-key solutions. Other than this we can also use modules from the Terraform community. Open-source modules saves time, improves security, and give greater 
    confidence in project infrastructure. Importantly these reusable modules encourage best practices
  - [Modules](https://developer.hashicorp.com/terraform/language/modules/develop#standard-module-structure) : A Terraform module is a way of creating a template of a cloud 
-   pattern, parameterizing, and reusing it.This project is built on modules to increase code 
+   pattern, parameterizing, and reusing it. They are useful tools for promoting software abstraction and code reuse. Input variables (or Terraform variables, or just variables) are user-supplied values that parametrize Terraform modules without altering the source code. This project is built on modules to increase code 
    reusability and decrease code redundancy. Modules breaks down complex configurations into smaller configs for reusability and maintainability. It 
    streamlines the provisioning and management of infrastructure, resulting in more efficient and dependable operations.
  - Leverage Official Open Source Modules : We fully leveraged open source modules provided freely by Hashicorp. This helps the team to scale faster as every developer   
