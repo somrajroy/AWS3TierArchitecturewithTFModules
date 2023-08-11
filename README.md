@@ -87,7 +87,7 @@ The Terraform configuration was organized into different modules for VPC, EC2, A
 
 With Terraform's declarative syntax, we were able to define our infrastructure as code. We created configuration files that specified the desired state of our AWS resources, including VPC, RDS database, security groups, and more. Terraform then took care of provisioning and managing these resources in a repeatable and consistent manner. The Terraform modules are elaborated below with benefits.
 
-If required we can also add a module folder and shift the respective resources tf files to that folder <br/>
+If required we can also add a module folder and shift the respective resources tf files to that folder. One last point - The modules used in the code are owned by AWS so I have version-locked it to ensure compatibility when the code is run.  <br/>
 
 **Handling sensitive data in Terraform modules** <br/>
 It is never a good practice to store sensitive information, such as access keys and passwords, in Terraform configuration files, where they could easily be exposed and shared into different configuration plans than they were intended for. Instead, a good practice is to create a file named `secrets.tfvars` to hold sensitive data, and place it in the root module folder in the top-level directory. This file should never be tracked in Git. Put the `secrets.tfvars` in `.gitignore` file. Declare two variables `secret_key` and `access_key` in variables.tf file and then assign `secret_key` and `access_key` values in `secrets.tfvars` file. Once done then run the commands `terraform plan -var-file="secrets.tfvars" -var-file="terraform.tfvars"` and `terraform apply -var-file="secrets.tfvars" -var-file="terraform.tfvars" -auto-approve`.
