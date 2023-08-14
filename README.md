@@ -2,7 +2,7 @@
 ##### Introduction
 
 In this #opensource project we will be sharing the experience of creating a Three-tier architecture in AWS using Terraform ([LAMP stack](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html)). All AWS Infrastructure implementation was done using offcial AWS Terraform modules.  The project aimed to create a scalable, secure, and high-performing web application environment. <br/>
-For Terraform users, the [Terraform Registry enables](https://registry.terraform.io/) the distribution of Terraform modules, which are reusable configurations. The Terraform Registry acts as a centralized repository for module sharing, making modules easier to discover and reuse. This project utilizes the offical Terraform modules<br/>
+For Terraform users, the [Terraform Registry enables](https://registry.terraform.io/) the distribution of [Terraform modules](https://developer.hashicorp.com/terraform/tutorials/modules/module), which are reusable configurations. The Terraform Registry acts as a centralized repository for module sharing, making modules easier to discover and reuse. This project utilizes the offical Terraform modules<br/>
 
 ##### Overall learnings
 - `Terraform Automation`: Experience the efficiency of infrastructure-as-code using Terraform. Rapidly deploy the complex Cloud architectures with ease.<br/>
