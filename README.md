@@ -10,8 +10,8 @@ For Terraform users, the [Terraform Registry enables](https://registry.terraform
    deployments are consistent, predictable, and efficient. This also reduces operational risk, making it an ideal choice for production environments.<br/>
 - `Infrastructure as Code (IaC)`: Leveraging Terraform, we treat infrastructure as code. This means that changes to infrastructure are versioned, tested, 
    and deployed in a controlled and predictable manner, mirroring best practices from the world of software development.  Idempotency is a core principle of 
-   IaC. It allows developers to declare the desired infrastructure state in code and trust that Terraform will converge to that state, 
-   regardless of the current state of the resources.<br/>
+   IaC. It allows developers to declare the desired infrastructure state in code and Terraform ensures that it converges to that state, regardless of the current 
+   state of the resources.<br/>
 - `Modular Flexibility`: Understand the efficiency & productivity of Terraform modules, enabling seamless customization and easy integration with 
   specific needs. The DRY and KISS principles incorporated in the official AWS Terraform modules contribute to modular design and consistent approach. With 
   reusable building blocks, development teams can create complex cloud infrastructures while maintaining a clean, uncluttered codebase.<br/>
