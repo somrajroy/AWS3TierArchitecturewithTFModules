@@ -47,8 +47,8 @@ To build our three-tier architecture, we leveraged various AWS services. These i
     - `Automation-first mindset`: By following a turn-key approach & leveraging pre-built official modules organizations can prioritze automating tasks wherever 
        possible thereby increasing efficiency throughout. These modules are designed to be used out of the box, with minimal configuration needed to match 
        specific use case. (where-ever required customers can easily create in-house modules because the official modules provide a very convenient starting 
-       point). This automation-first approach improves efficiency and accelerates the deployment process. These modules and their associated practices embody 
-       these essential principles (efficiency, speed, consistency, scalability and reliability).<br/>
+       point). This automation-first approach improves efficiency and accelerates the deployment process and enables customers to provision and manage 
+       infrastructure resources in a consistent and repeatable manner. These modules & their associated practices embody the essential principles of automation-first mindset (efficiency, speed, consistency, scalability and reliability).<br/>
     - `Security-First approach/mindset`: By leveraging the official AWS Terraform modules, customers benefit from industry-standard security practices which AWS 
         recommends. The official AWS Terraform modules are designed with security in mind, providing a foundation that incorporates security best practices. <br/>
     - `Simplicity & consitency`: The official Terraform modules provide a significant level of convenience, pre-configuration & and consistent patterns for 
