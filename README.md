@@ -7,9 +7,8 @@ This blog post is a comprehensive prescriptive guide to effectively using Terraf
 For aspiring developers, it's your playground — a chance to the download code, tinker, and master Terraform. Explore a treasure trove of free, top-quality resources in the Appendix/References section, including expert YouTube courses.
 
 `To summarize - this blog is a prescriptive guidance for anyone interested in automation-first, security-first, and efficient infrastructure management`. <br/>
-For Terraform users, the [Terraform Registry enables](https://registry.terraform.io/) the distribution of [Terraform modules](https://developer.hashicorp.com/terraform/tutorials/modules/module), which are reusable configurations. The Terraform Registry acts as a centralized repository for module sharing, making modules easier to discover and reuse. This project utilizes the offical Terraform modules<br/>
 
-##### Overall learnings
+#### Overall learnings
 - `Terraform Automation, efficient resource management & predictable infrastructure`: Experience the efficiency of infrastructure-as-code using Terraform. 
    Rapidly deploy the complex Cloud architectures with ease. One of the key benefits of Terraform is its idempotency, which ensures that infrastructure 
    deployments are consistent, predictable, and efficient. This also reduces operational risk, making it an ideal choice for production environments.<br/>
