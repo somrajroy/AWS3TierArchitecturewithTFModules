@@ -15,7 +15,7 @@ For Terraform users, the [Terraform Registry enables](https://registry.terraform
 - `Modular Flexibility`: Understand the efficiency & productivity of Terraform modules, enabling seamless customization and easy integration with 
   specific needs. The DRY and KISS principles incorporated in the official AWS Terraform modules contribute to modular design and consistent approach. With 
   reusable building blocks, development teams can create complex cloud infrastructures while maintaining a clean, uncluttered codebase.<br/>
-- `Handling sensitive data in Terraform modules like secret key, access key and passwords` <br/> 
+- `Handling sensitive data in Terraform modules like secret key, access key and passwords` : I have shared one of the best ways to handle secrets by leveraging `.gitignore`<br/> 
 - [Terraform remote state using AWS S3](https://developer.hashicorp.com/terraform/language/settings/backends/s3) and [state locking using Dynamodb](https://developer.hashicorp.com/terraform/language/settings/backends/configuration). To ensure the reliability and consistency of AWS infrastructure :- have implemented state storage in AWS S3 and DynamoDB. This provides with a secure and scalable mechanism for storing and retrieving critical state information.<br/>
 - `DRY and KISS principles of software development` : The official AWS Terraform modules in the Terraform Registry adhere to the DRY principle, promoting code 
    reusability and minimizing duplication enabling development teams to avoid repetition and consolidate their infrastructure codebase efficiently. When the 
