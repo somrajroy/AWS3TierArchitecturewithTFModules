@@ -6,7 +6,6 @@ For Terraform users, the [Terraform Registry enables](https://registry.terraform
 
 ##### Overall learnings
 - `Terraform Automation`: Experience the efficiency of infrastructure-as-code using Terraform. Rapidly deploy the complex Cloud architectures with ease.<br/>
-- Terraform structure and naming conventions & variable declarations <br/>
 - `Infrastructure as Code (IaC)`: Leveraging Terraform, we treat infrastructure as code. This means that changes to infrastructure are versioned, tested, 
   and deployed in a controlled and predictable manner, mirroring best practices from the world of software development.<br/>
 - `Modular Flexibility`: Understand the efficiency & productivity of official AWS Terraform modules, enabling seamless customization and easy integration with 
@@ -22,10 +21,10 @@ For Terraform users, the [Terraform Registry enables](https://registry.terraform
    complicated). Simplicity and elegance are core of the official AWS Terraform modules.  The modules encapsulate complex AWS resource configurations into 
    easy-to-use interfaces, where users only need to provide a few inputs to create or manage an AWS resource. These principles (DRY & KISS) are widely used in 
    the software development and are effective in improving code quality and reducing errors.  <br/>
-- `Terraform best Practices & software development best practices` : The official AWS Terraform modules are developed and maintained by the AWS team, ensuring 
-   that they follow best practices and are regularly updated to incorporate new features and improvements. By leveraging these modules, everyone can benefit from 
-   the  expertise of the AWS team and the wider Terraform community. The approach can help deliver high-quality solutions to customers that are easy to maintain 
-   and scale over time.<br/>
+- `Terraform best Practices, software development best practices` : The official AWS Terraform modules are developed and maintained by the AWS 
+   team, ensuring that they follow best practices and are regularly updated to incorporate new features and improvements. By leveraging these modules, everyone 
+   can benefit from the  expertise of the AWS team and the wider Terraform community. The approach can help deliver high-quality solutions to customers that are 
+   easy to maintain and scale over time. <br/>
 - `Standardization` : The official AWS Terraform modules follow standardized practices and conventions, ensuring that infrastructure deployments adhere to 
    best practices and are consistent with industry standards. You inherit AWS-recommended configurations. This standardization ensures that infrastructure 
    follows AWS-recommended guidelines.<br/>
