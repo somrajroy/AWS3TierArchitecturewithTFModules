@@ -35,30 +35,37 @@ A Three-tier architecture is a widely adopted approach for building scalable web
 
 To build our three-tier architecture, we leveraged various AWS services. These included the use of [official AWS Terraform modules](https://www.hashicorp.com/blog/terraform-modules-on-aws) for VPC (Virtual Private Cloud), ALB, ASG, RDS , security groups, and more. There are quite a few benefits & advantages to refer and use official Terraform modules (or open source modules). The value (benefits/advantages) can be passed on to customers & project teams. Some of them are :<br/>
     - `Rapid Deployment and Scalability` : The well-documented modules abstracts away all the complexity of setting AWS resources - customers can experience a  
-      seamless and swift setup for their AWS architectures. The modules provide a standardized foundation, streamlining the deployment process and reducing the chances of 
-      errors or inconsistencies.<br/>
-    - `Modular approach & best practices for AWS Architecture` : By utilizing official AWS Terraform modules - the architecture benefits from tested and well-maintained 
-       code that follows AWS best practices. These modules also allow different teams to work independently on specific parts of the system without interfering with each 
-       other. We have the benefit of using battle-tested, production-hardened code without having to write it ourselves (we can modify it as required to build in-hosue 
-      modules very easily).<br/>
+      seamless and swift setup for their AWS architectures. The modules provide a standardized foundation, streamlining the deployment process and reducing the 
+      chances of errors or inconsistencies.<br/>
+    - `Modular approach & best practices for AWS Architecture` : By utilizing official AWS Terraform modules - the architecture benefits from tested and well- 
+       maintained code that follows AWS best practices. These modules also allow different teams to work independently on specific parts of the system without   
+       interfering with each other. We have the benefit of using battle-tested, production-hardened code without having to write it ourselves (we can modify it 
+       as required to build in-house modules very easily).<br/>
     - `Scalability & Learnings for the teams` : Modules in [official Terraform registry](https://registry.terraform.io/) are great since developers and customers 
-       can now draw from the knowledge of the community that has already developed battle-tested modules. Moreover,  the “HashiCorp Verified Modules” means they are vetted 
-       and actively maintained and gives extra confidence. These modules can also be easily extended & opinionated to build in-house modules (instead of starting from 
-       scratch).Lastly, people from non-development background can also learn & work easily. They don’t need to know how a module works (or complex programming) to be able 
-       to use a module; they just have to know how to set inputs and outputs. <br/>
-    - `Automation-first mindset`: By following a turn-key approach & leveraging pre-built official modules organizations can prioritze automating tasks wherever possible 
-        thereby increasing efficiency throughout. These modules are designed to be used out of the box, with minimal configuration needed to match specific use case. 
-        (where-ever required customers can easily create in-house modules because the official modules provide a very convenient starting point).<br/>
+       can now draw from the knowledge of the community that has already developed battle-tested modules. Moreover,  the “HashiCorp Verified Modules” means they 
+       are vetted and actively maintained and gives extra confidence. These modules can also be easily extended & opinionated to build in-house modules (instead 
+       of starting from scratch).Lastly, people from non-development background can also learn & work easily. They don’t need to know how a module works (or 
+       complex programming) to be able to use a module; they just have to know how to set inputs and outputs. <br/>
+    - `Automation-first mindset`: By following a turn-key approach & leveraging pre-built official modules organizations can prioritze automating tasks wherever 
+       possible thereby increasing efficiency throughout. These modules are designed to be used out of the box, with minimal configuration needed to match 
+       specific use case. (where-ever required customers can easily create in-house modules because the official modules provide a very convenient starting 
+       point).<br/>
     - `Security-First approach/mindset`: By leveraging the official AWS Terraform modules, customers benefit from industry-standard security practices which AWS 
         recommends. <br/>
     - `Simplicity & consitency`: The official Terraform modules provide a significant level of convenience, pre-configuration & and consistent patterns for 
         infrastructure provisioning which helps accelerate the development and deployment process. <br/>
-    - `Documentation and versioning` : these remote modules are very well documented and versioned. Anyone new can easily scale up & be productive at the earliest.<br/>
-    -  `Cost optimization & benefits which can be passed to customers` : AWS Terraform modules are designed to leverage AWS services in an optimized manner.  Official 
-        Terraform AWS modules helps reduce efforts and costs of implementation which can be passed to customers. We can save a lot of time by using these open source 
-        modules instead of writing comparable code ourselves; all it takes is learning how to use the module interface. Official modules are widely used and well- 
-        maintained, they are tested and validated for functionality and compatibility, saving development costs and avoiding potential issues down the line. All these 
-        benefits can be passed to customers<br/>
+    - `Documentation and versioning` : these remote modules are very well documented and versioned. Anyone new can easily scale up & be productive at the 
+       earliest.<br/>
+    -  `Cost optimization & benefits which can be passed to customers` : AWS Terraform modules are designed to leverage AWS services in an optimized manner.  
+        Official Terraform AWS modules helps reduce efforts and costs of implementation which can be passed to customers. We can save a lot of time by using 
+        these open source modules instead of writing comparable code ourselves; all it takes is learning how to use the module interface. Official modules are 
+        widely used and well-maintained, they are tested and validated for functionality and compatibility, saving development costs and avoiding potential 
+        issues down the line. All these benefits can be passed to customers.<br/>
+    - `Community Validation & support` : The official modules have undergone extensive review and testing by the Terraform community benefiting from the 
+       collective expertise. This community-driven validation helps to identify and address potential issues, ensuring that the modules are reliable, well- 
+       documented, and follow programming/software development best practices. <br/>
+    -  `Maintenance and Continuous Improvement`: Official modules are well-maintained and updated by the creators/experts incorporating new features & standards. 
+        This ensures that customers gets benefited & stays up-to-date with the latest AWS features, industry standards, best practices and enhancements.<br/>
     
 ##### Project Setup and Prerequisites
 - AWS account with necessary permissions <br/>
