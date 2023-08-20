@@ -8,7 +8,7 @@ For Terraform users, the [Terraform Registry enables](https://registry.terraform
 - `Terraform Automation`: Experience the efficiency of infrastructure-as-code using Terraform. Rapidly deploy the complex Cloud architectures with ease.<br/>
 - `Infrastructure as Code (IaC)`: Leveraging Terraform, we treat infrastructure as code. This means that changes to infrastructure are versioned, tested, 
   and deployed in a controlled and predictable manner, mirroring best practices from the world of software development.<br/>
-- `Modular Flexibility`: Understand the efficiency & productivity of official AWS Terraform modules, enabling seamless customization and easy integration with 
+- `Modular Flexibility`: Understand the efficiency & productivity of Terraform modules, enabling seamless customization and easy integration with 
   specific needs. The DRY and KISS principles incorporated in the official AWS Terraform modules contribute to modular design and consistent approach. With 
   reusable building blocks, development teams can create complex cloud infrastructures while maintaining a clean, uncluttered codebase.<br/>
 - `Handling sensitive data in Terraform modules like secret key, access key and passwords` <br/> 
@@ -47,9 +47,10 @@ To build our three-tier architecture, we leveraged various AWS services. These i
     - `Automation-first mindset`: By following a turn-key approach & leveraging pre-built official modules organizations can prioritze automating tasks wherever 
        possible thereby increasing efficiency throughout. These modules are designed to be used out of the box, with minimal configuration needed to match 
        specific use case. (where-ever required customers can easily create in-house modules because the official modules provide a very convenient starting 
-       point).<br/>
+       point). This automation-first approach improves efficiency and accelerates the deployment process. These modules and their associated practices embody 
+       these essential principles (efficiency, speed, consistency, scalability and reliability).<br/>
     - `Security-First approach/mindset`: By leveraging the official AWS Terraform modules, customers benefit from industry-standard security practices which AWS 
-        recommends. <br/>
+        recommends. The official AWS Terraform modules are designed with security in mind, providing a foundation that incorporates security best practices. <br/>
     - `Simplicity & consitency`: The official Terraform modules provide a significant level of convenience, pre-configuration & and consistent patterns for 
         infrastructure provisioning which helps accelerate the development and deployment process. <br/>
     - `Documentation and versioning` : these remote modules are very well documented and versioned. Anyone new can easily scale up & be productive at the 
