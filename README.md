@@ -26,8 +26,8 @@ For Terraform users, the [Terraform Registry enables](https://registry.terraform
    can benefit from the  expertise of the AWS team and the wider Terraform community. The approach can help deliver high-quality solutions to customers that are 
    easy to maintain and scale over time. <br/>
 - `Standardization` : The official AWS Terraform modules follow standardized practices and conventions, ensuring that infrastructure deployments adhere to 
-   best practices and are consistent with industry standards. You inherit AWS-recommended configurations. This standardization ensures that infrastructure 
-   follows AWS-recommended guidelines.<br/>
+   best practices and are consistent with industry standards. All AWS-recommended configurations & good practices are inherited. This standardization ensures 
+   that infrastructure follows AWS-recommended guidelines.<br/>
 
 ##### Project Overview
 
