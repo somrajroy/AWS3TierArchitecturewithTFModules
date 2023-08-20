@@ -5,9 +5,13 @@ In this #opensource project we will be sharing the experience of creating a Thre
 For Terraform users, the [Terraform Registry enables](https://registry.terraform.io/) the distribution of [Terraform modules](https://developer.hashicorp.com/terraform/tutorials/modules/module), which are reusable configurations. The Terraform Registry acts as a centralized repository for module sharing, making modules easier to discover and reuse. This project utilizes the offical Terraform modules<br/>
 
 ##### Overall learnings
-- `Terraform Automation`: Experience the efficiency of infrastructure-as-code using Terraform. Rapidly deploy the complex Cloud architectures with ease.<br/>
+- `Terraform Automation, efficient resource management & predictable infrastructure`: Experience the efficiency of infrastructure-as-code using Terraform. 
+   Rapidly deploy the complex Cloud architectures with ease. One of the key benefits of Terraform is its idempotency, which ensures that infrastructure 
+   deployments are consistent, predictable, and efficient. This also reduces operational risk, making it an ideal choice for production environments.<br/>
 - `Infrastructure as Code (IaC)`: Leveraging Terraform, we treat infrastructure as code. This means that changes to infrastructure are versioned, tested, 
-  and deployed in a controlled and predictable manner, mirroring best practices from the world of software development.<br/>
+   and deployed in a controlled and predictable manner, mirroring best practices from the world of software development.  Idempotency is a core principle of 
+   IaC. It allows developers to declare the desired infrastructure state in code and trust that Terraform will converge to that state, 
+   regardless of the current state of the resources.<br/>
 - `Modular Flexibility`: Understand the efficiency & productivity of Terraform modules, enabling seamless customization and easy integration with 
   specific needs. The DRY and KISS principles incorporated in the official AWS Terraform modules contribute to modular design and consistent approach. With 
   reusable building blocks, development teams can create complex cloud infrastructures while maintaining a clean, uncluttered codebase.<br/>
@@ -26,6 +30,8 @@ For Terraform users, the [Terraform Registry enables](https://registry.terraform
 - `Standardization` : The official AWS Terraform modules follow standardized practices and conventions, ensuring that infrastructure deployments adhere to 
    best practices and are consistent with industry standards. All AWS-recommended configurations & good practices are inherited. This standardization ensures 
    that infrastructure follows AWS-recommended guidelines.<br/>
+- `Disaster Recovery Assurance`: In the event of a disaster or system failure, Terraform's idempotency plays a crucial role in disaster recovery plans. Customers 
+   can recreate their entire infrastructure quickly and reliably by simply applying the Terraform configuration.<br/>
 
 ##### Project Overview
 
