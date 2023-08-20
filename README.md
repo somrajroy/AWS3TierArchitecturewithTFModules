@@ -50,7 +50,9 @@ To build our three-tier architecture, we leveraged various AWS services. These i
        point). This automation-first approach improves efficiency and accelerates the deployment process and enables customers to provision and manage 
        infrastructure resources in a consistent and repeatable manner. These modules & their associated practices embody the essential principles of automation-first mindset (efficiency, speed, consistency, scalability and reliability).<br/>
     - `Security-First approach/mindset`: By leveraging the official AWS Terraform modules, customers benefit from industry-standard security practices which AWS 
-        recommends. The official AWS Terraform modules are designed with security in mind, providing a foundation that incorporates security best practices. <br/>
+        recommends. The official AWS Terraform modules are designed with security/compliance in mind, providing a foundation that incorporates security best 
+        practices. This ensures that the infrastructure is secure from the ground up, reducing the risk of security vulnerabilities or breaches. Additionally, 
+        referencing/using the official modules ensures that developers are using the most up-to-date security features and configurations.<br/>
     - `Simplicity & consitency`: The official Terraform modules provide a significant level of convenience, pre-configuration & and consistent patterns for 
         infrastructure provisioning which helps accelerate the development and deployment process. <br/>
     - `Documentation and versioning` : these remote modules are very well documented and versioned. Anyone new can easily scale up & be productive at the 
@@ -109,7 +111,7 @@ It is never a good practice to store sensitive information, such as access keys 
 ![image](https://github.com/somrajroy/AWS3TierArchitecturewithTFModules/assets/92582005/c4b2781f-1ca5-4328-b061-5c22542f12dc) <br/>
 
 
-
+**Documentation of modules: The official Terraform modules have been developed and tested by experts, which ensures that they follow all the best practices and are secure by design. By leveraging these modules, developers can automate the infrastructure deployment process and ensure that the infrastructure is secure from the ground up. This approach aligns with an automation-first and security-first mindset as mentioned above, and helps deliver high-quality solutions to customers.<br/> 
  - Module `terraform-aws-modules/vpc/aws` : The terraform-aws-modules/vpc/aws module is designed to create a Virtual Private Cloud (VPC) in AWS. A VPC is a logically isolated section of the AWS cloud where you can launch resources, such as Amazon EC2 instances and RDS databases. This module abstracts the complexities of creating a VPC and provides a simple, reusable configuration. It provides a set of configurable options for creating a VPC, including the number of subnets, the IP address range, and the availability zones. The module also creates the necessary resources for the VPC, such as internet gateways, route tables, and security groups.
    - **Features**
      - Creation of public and private subnets across multiple Availability Zones (AZs).
