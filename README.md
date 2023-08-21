@@ -133,9 +133,6 @@ It is never a good practice to store sensitive information, such as access keys 
 ##### Best Practices
 Other than what mentioned earlier - below are some practices followed during the project :
 
- - `Terraform modules registry & open source modules`: The project leverages the [Official Terraform module registry](https://registry.terraform.io/) to find and 
-    apply pre-built modules to provide a turn-key solutions. Other than this we can also use modules from the Terraform community. Open-source modules saves 
-    time, improves security, and give greater confidence in project infrastructure. Importantly these reusable modules encourage best practices
  - [Modularization to reduce technical debt](https://developer.hashicorp.com/terraform/language/modules/develop#standard-module-structure) : The code is clean 
    and concise because we leveraged modules. In real-world you should download the modules and customize it and use it as per needs. A Terraform module 
    is a way of creating a template of a cloud pattern, parameterizing, and reusing it. They are useful tools for promoting software abstraction and code reuse. 
@@ -146,22 +143,10 @@ Other than what mentioned earlier - below are some practices followed during the
    maintained across the organization. This helps reduce the amount of technical debt that accumulates over time, since we can avoid duplicating code and 
    creating custom solutions for every project. Overall, by leveraging Terraform modules, one can create high-quality infrastructure code that is easy to 
    maintain and scale over time. <br/>
- - `Leverage Official Open Source Modules` : We fully leveraged open source modules provided freely by Hashicorp. This helps the team to scale faster as every 
-   developer is likely to be more (or easily) familiar with an open source module (unlike bespoke modules) resulting new staff enrolment to be quicker. Another 
-   big advantage is that development team now can easily create opinionated modules from these open source modules which can serve a specific purpose (instead of 
-   starting from scratch). If they think these open source modules to be too broad they can create in-house opinionated modules for specific use case. Open- 
-   source modules are highly configurable & easy to make more configurable.
- - `Don’t Repeat Yourself (DRY)` : One of the principles of software engineering is DRY (don’t repeat yourself). The same applies to IaC. In this project we 
-   applied Modularization (official Terraform modules) to achieve DRY state.  
  - `Remote state storage`: The Terraform state files are stored in a remote location (AWS S3) to enable collaboration and ensure consistency.
- - This project uses proper naming conventions for resources to avoid naming conflicts. The good programming practices get inherited automatically from the 
-   modules. <br/>
- - `Use version controls Git as single source of truth`. We have stored Terraform configurations in a version control system (Github) to track changes and 
-   collaborate with others.<br/>
- - `Leverage variables.tf & terraform.tfvars files` : Used variables to customize infrastructure & avoid hardcoding values in the configuration file. The naming 
-   conventions were also consistent as official terraform modules were used. Variable.tf and terraform.tfvars files are excellent for externalizing 
-   configurations and passing values so they can be easily deployed across multiple environments. Everything that’s not a secret was put in tfvars files for all 
-   inputs and then put them in source control (Github). <br/>
+ - `Use version controls Git as single source of truth`. <br/>
+ - `Leverage variables.tf & terraform.tfvars files` : Used variables to customize infrastructure & avoid hardcoding values in the configuration file. These files 
+    are excellent for externalizing configurations and passing values so they can be easily deployed across multiple environments. 
 
 ##### Immutable vs Mutable Infrastructure : Points to consider
 The correct approach to infrastructure management will depend on the specific needs of the organization. However, immutable infrastructure is often preferred for production environments where security and reliability are critical. Terraform itself does not inherently make infrastructure immutable or mutable; it's a tool that allows to define, provision and manage infrastructure as code (IaC). Knowing when to consider immutable infrastructure can be difficult, and there is no one clearly defined cutoff or inflection point. It's always important to consider the specific use cases, workloads, needs and constraints of project when deciding on a  strategy. Below points can be considered :
