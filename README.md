@@ -147,18 +147,19 @@ Other than what mentioned earlier - below are some practices followed during the
    maintained across the organization. This helps reduce the amount of technical debt that accumulates over time, since we can avoid duplicating code and 
    creating custom solutions for every project. Overall, by leveraging Terraform modules, one can create high-quality infrastructure code that is easy to 
    maintain and scale over time. <br/>
- - Leverage Official Open Source Modules : We fully leveraged open source modules provided freely by Hashicorp. This helps the team to scale faster as every 
-   developer is likely to be familiar with an open source module (unlike bespoke modules) resulting new staff enrolment to be quicker. Another big advantage is 
-   that development team now can easily create opinionated modules from these open source modules which can serve a specific purpose (instead of starting from 
-   scratch). If they think these open source modules to be too broad they can create in-house opinionated modules for specific use case. Open-source modules are 
-   highly configurable & easy to make more configurable.
- - Don’t Repeat Yourself (DRY) : One of the principles of software engineering is DRY (don’t repeat yourself). The same applies to IaC. In this project we 
+ - `Leverage Official Open Source Modules` : We fully leveraged open source modules provided freely by Hashicorp. This helps the team to scale faster as every 
+   developer is likely to be more (or easily) familiar with an open source module (unlike bespoke modules) resulting new staff enrolment to be quicker. Another 
+   big advantage is that development team now can easily create opinionated modules from these open source modules which can serve a specific purpose (instead of 
+   starting from scratch). If they think these open source modules to be too broad they can create in-house opinionated modules for specific use case. Open- 
+   source modules are highly configurable & easy to make more configurable.
+ - `Don’t Repeat Yourself (DRY)` : One of the principles of software engineering is DRY (don’t repeat yourself). The same applies to IaC. In this project we 
    applied Modularization (official Terraform modules) to achieve DRY state.  
- - Remote state storage: The Terraform state files are stored in a remote location (AWS S3) to enable collaboration and ensure consistency.
- - This project uses proper naming conventions for resources to avoid naming conflicts.
- - Use version controls Git as single source of truth. We have stored Terraform configurations in a version control system (Github) to track changes and collaborate with 
-   others.
- - Leverage variables.tf & terraform.tfvars files : Used variables to customize infrastructure and avoid hardcoding values in the configuration file. The naming 
+ - `Remote state storage`: The Terraform state files are stored in a remote location (AWS S3) to enable collaboration and ensure consistency.
+ - This project uses proper naming conventions for resources to avoid naming conflicts. The good programming practices get inherited automatically from the 
+   modules. <br/>
+ - `Use version controls Git as single source of truth`. We have stored Terraform configurations in a version control system (Github) to track changes and 
+   collaborate with others.<br/>
+ - `Leverage variables.tf & terraform.tfvars files` : Used variables to customize infrastructure & avoid hardcoding values in the configuration file. The naming 
    conventions were also consistent as official terraform modules were used. Variable.tf and terraform.tfvars files are excellent for externalizing 
    configurations and passing values so they can be easily deployed across multiple environments. Everything that’s not a secret was put in tfvars files for all 
    inputs and then put them in source control (Github). <br/>
