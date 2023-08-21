@@ -168,7 +168,7 @@ The correct approach to infrastructure management will depend on the specific ne
 Immutable infrastructure can be a good choice for organizations that need to:
    * Increase reliability <br/>
    * Reduce costs <br/>
-   * Complex systems & need for Simplify operations : Immutability is the Answer to Complexity. Complex systems often benefit from the predictability of          
+   * Complex systems & need for Simplify operations : Immutability is the Answer to Complexity. Complex systems often benefit from the predictability of       
      immutable infrastructure. <br/>
    * Frequent Updates (dynamic vs static) : In environments with frequent updates and changes, immutability simplifies maintenance and ensures each change 
      results in a fresh, validated resource. For simpler, less dynamic environments where updates and changes are infrequent, mutable infrastructure may be more 
