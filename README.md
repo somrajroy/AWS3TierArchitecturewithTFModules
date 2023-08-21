@@ -34,7 +34,13 @@ The blog post is a `comprehensive & prescriptive guide` to effectively using Ter
 - `Standardization` : The official AWS Terraform modules follow standardized practices and conventions, ensuring that infrastructure deployments adhere to 
    best practices and are consistent with industry standards. All AWS-recommended configurations & good practices are inherited. This standardization ensures 
    that infrastructure follows AWS-recommended guidelines.<br/>
--  `Immutable Infrastructure`: [Terraform is considered as an immutable infrastructure as code technology](https://www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure). For those who are unaware, immutable infrastructure is the concept of never performing updates in place. If an update occurs, it takes place by tearing down the old infrastructure (such as a server). It's the idea that once an infrastructure component is provisioned, it remains unchanged throughout its lifecycle. Any updates or changes result in the creation of a completely new instance, ensuring consistency, predictability, and reliability. This approach is a key driver of stability and resilience in cloud environments. By contrast, with mutable infrastructure, existing resources are allowed to persist through inplace updates or patches instead of resources being deleted and re-created.<br/>
+-  `Immutable & mutable Infrastructure`: [Terraform is considered as an immutable infrastructure as code technology](https://www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure). For those who are unaware, immutable infrastructure is the concept of never performing updates in place. If an update occurs, it takes 
+   place by tearing down the old infrastructure (such as a server). It's the idea that once an infrastructure component is provisioned, it remains unchanged    
+   throughout its lifecycle. Any updates or changes result in the creation of a completely new instance. This approach can help to improve security, reliability, 
+   and cost-efficiency and is considered a key driver of stability and resilience in cloud environments. By contrast, with mutable infrastructure, existing 
+   resources are allowed to persist through inplace updates or patches instead of resources being deleted and re-created. It is an approach to infrastructure 
+   management where infrastructure resources can be modified after they have been created. This approach can be more flexible, but it can also be more difficult 
+   to manage and secure.<br/>
 
 #### Project Overview
 
