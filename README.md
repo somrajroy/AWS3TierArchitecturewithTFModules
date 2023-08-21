@@ -94,32 +94,21 @@ Below is the sample architecture diagram.
 ![image](https://github.com/somrajroy/AWS3TierArchitecturewithTFModules/assets/92582005/e331b49b-5e6f-48ae-8fb2-a76a02adb450)
 <br/>
 
-##### Architecture Design
-
-**Web Tier** <br/>
-The Web tier is responsible for handling client traffic. We deployed Amazon EC2 servers in a private subnet to host the web servers. It was accessible through an Application Load Balancer (ALB). <br/>
-
-**Application Tier** <br/>
-The Application tier consists of one or more EC2 instances deployed in a private subnet. We installed the necessary application components (e.g., PHP) on these instances.<br/>
-
-**Database Tier** <br/>
-The Database tier used Amazon RDS for MySQL. It was deployed in a private subnet to ensure security. <br/>
-
 **Terraform Configuration** <br/>
 
 The Terraform configuration was organized into different modules for VPC, EC2, ALB, RDS, and security groups. [Official AWS Terraform modules are used](https://www.hashicorp.com/blog/terraform-modules-on-aws) to create the entire infrastructure. <br/><br/>
 [Modularization](https://developer.hashicorp.com/terraform/tutorials/modules/module) : This project is fully based on near turn-key modules. The best part is that it can also be used to [create opinionated modules very easily because these modules gives a very convinient starting point](https://www.hashicorp.com/resources/opinionated-terraform-best-practices-and-anti-patterns). Valuable modules are the ones that are configurable and provide reusable building blocks. Customers should decide how things should be done and create a module to implement their own preferred approach. This project can serve as guide for the same.<br/>
 
-One last point - The modules used in the code are owned by AWS so I have `version-locked` them to ensure compatibility when the code is run.  In most cases developers will download the module and refer from there accross projects <br/>
+One last point - The modules used in the code are owned by AWS so I have `version-locked` them to ensure compatibility when the code is run.  In most cases developers will download the module and refer accross projects <br/>
 
 **Handling sensitive data in Terraform modules** <br/><br/>
-It is never a good practice to store sensitive information, such as access keys and passwords, in Terraform configuration files, where they could easily be exposed and shared into different configuration plans than they were intended for. Instead, a good practice is to create a file named `secrets.tfvars` to hold sensitive data, and place it in the root module folder in the top-level directory. This file should never be tracked in Git. Put the `secrets.tfvars` in `.gitignore` file. Declare two variables `secret_key` and `access_key` in variables.tf file and then assign `secret_key` and `access_key` values in `secrets.tfvars` file. Once done then run the commands `terraform plan -var-file="secrets.tfvars" -var-file="terraform.tfvars"` and `terraform apply -var-file="secrets.tfvars" -var-file="terraform.tfvars" -auto-approve`.
+It is never a good practice to store sensitive information, such as access keys and passwords, in Terraform configuration files, where they could easily be exposed and shared into different configuration plans than they were intended for. Instead, a good practice is to create a file named `secrets.tfvars` to hold sensitive data, and place it in the root module folder in the top-level directory. This file should never be tracked in Git. Put the `secrets.tfvars` in `.gitignore` file. Declare two variables `secret_key` and `access_key` in variables.tf file and then assign `secret_key` and `access_key` values in `secrets.tfvars` file. Once done then run the commands `terraform plan -var-file="secrets.tfvars" -var-file="terraform.tfvars"` and `terraform apply -var-file="secrets.tfvars" -var-file="terraform.tfvars" -auto-approve`.<br/>
 
 ![image](https://github.com/somrajroy/AWS3TierArchitecturewithTFModules/assets/92582005/08c74328-9086-48fe-b358-8c7f510a7396) <br/>
 ![image](https://github.com/somrajroy/AWS3TierArchitecturewithTFModules/assets/92582005/c4b2781f-1ca5-4328-b061-5c22542f12dc) <br/>
 
 
-**Documentation of modules**: The official Terraform modules have been developed and tested by experts, which ensures that they follow all the best practices and are secure by design. By leveraging these modules, we can ensure that our Cloud Infrastructure is efficient, reliable & secure from the ground up. This approach aligns with an automation-first and security-first mindset as mentioned above, and helps deliver high-quality solutions to customers. The modules used are available at the links below. You can also get the entire code in Github mentioned in the links. <br/> <br/>
+**Module Documentation**: The official Terraform modules have been developed and tested by experts, which ensures that they follow all the best practices and are secure by design. By leveraging these modules, we can ensure that our Cloud Infrastructure is efficient, reliable & secure from the ground up. This approach aligns with an automation-first and security-first mindset as mentioned above, and helps deliver high-quality solutions to customers. The modules used are available at the links below. You can also get the entire code in Github mentioned in the links. <br/> <br/>
  - Module `terraform-aws-modules/vpc/aws` : The [terraform-aws-modules/vpc/aws module](https://registry.terraform.io/modules/terraform-aws- 
    modules/vpc/aws/latest) is designed to create a Virtual Private Cloud (VPC) in AWS. This module abstracts the complexities of creating a VPC and provides a 
    simple, reusable configuration. It provides a set of configurable options for creating a VPC, including the number of subnets, the IP address range, and the 
