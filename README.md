@@ -34,13 +34,7 @@ The blog post is a `comprehensive & prescriptive guide` to effectively using Ter
 - `Standardization` : The official AWS Terraform modules follow standardized practices and conventions, ensuring that infrastructure deployments adhere to 
    best practices and are consistent with industry standards. All AWS-recommended configurations & good practices are inherited. This standardization ensures 
    that infrastructure follows AWS-recommended guidelines.<br/>
--  `Immutable & mutable Infrastructure`: [Terraform is considered as an immutable infrastructure as code technology](https://www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure). For those who are unaware, immutable infrastructure is the concept of never performing updates in place. If an update occurs, it takes 
-   place by tearing down the old infrastructure (such as a server). It's the idea that once an infrastructure component is provisioned, it remains unchanged    
-   throughout its lifecycle. Any updates or changes result in the creation of a completely new instance. This approach can help to improve security, reliability, 
-   and cost-efficiency and is considered a key driver of stability and resilience in cloud environments. By contrast, with mutable infrastructure, existing 
-   resources are allowed to persist through inplace updates or patches instead of resources being deleted and re-created. It is an approach to infrastructure 
-   management where infrastructure resources can be modified after they have been created. This approach can be more flexible, but it can also be more difficult 
-   to manage and secure.<br/>
+-  `Immutable & mutable Infrastructure`: [Terraform is considered as an immutable infrastructure as code technology](https://www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure). For those who are unaware, immutable infrastructure is the concept of never performing updates in place. An immutable infrastructure never changes after its deployment. If an update occurs, it takes place by tearing down the old infrastructure (such as a server). It's the idea that once an infrastructure component is provisioned, it remains unchanged throughout its lifecycle. Any updates or changes result in the creation of a completely new instance. This approach can help to improve security, reliability, and cost-efficiency and is considered a key driver of stability and resilience in cloud environments. By contrast, with mutable infrastructure, existing resources are allowed to persist through inplace updates or patches instead of resources being deleted and re-created. It is an approach to infrastructure management where infrastructure resources can be modified after they have been created. This approach can be more flexible, but it can also be more difficult to manage and secure.<br/>
 
 #### Project Overview
 
@@ -168,6 +162,25 @@ Other than what mentioned earlier - below are some practices followed during the
    conventions were also consistent as official terraform modules were used. Variable.tf and terraform.tfvars files are excellent for externalizing 
    configurations and passing values so they can be easily deployed across multiple environments. Everything that’s not a secret was put in tfvars files for all 
    inputs and then put them in source control (Github). <br/>
+
+##### Immutable vs Mutable Infrastructure : Points to consider
+The correct approach to infrastructure management will depend on the specific needs of the organization. However, immutable infrastructure is often preferred for production environments where security and reliability are critical. Terraform itself does not inherently make infrastructure immutable or mutable; it's a tool that allows to define, provision and manage infrastructure as code (IaC). Knowing when to consider immutable infrastructure can be difficult, and there is no one clearly defined cutoff or inflection point. It's always important to consider the specific use cases, needs and constraints of project when deciding on an infrastructure strategy. Assess the project's requirements and objectives to determine whether mutable or immutable infrastructure is more suitable. Below points can be considered :
+Immutable infrastructure can be a good choice for organizations that need to:
+   * Increase reliability <br/>
+   * Reduce costs <br/>
+   * Complex systems & need for Simplify operations : Immutability is the Answer to Complexity. Complex systems often benefit from the predictability of          
+     immutable infrastructure. <br/>
+   * Frequent Updates (dynamic vs static) : In environments with frequent updates and changes, immutability simplifies maintenance and ensures each change 
+     results in a fresh, validated resource. For simpler, less dynamic environments where updates and changes are infrequent, mutable infrastructure may be more 
+     practical.<br/>
+   * Security-First Environments/ Improve security: For security-conscious environments, immutability facilitates quick response to vulnerabilities by replacing 
+     resources with patched versions.
+   * Resource Churn: Frequent replacement of resources can lead to resource churn and increased operational overhead.<br/>
+   * Data Management: Immutable infrastructure can be challenging when dealing with stateful data, requiring careful planning for data persistence and migration.<br/>
+   * Stateful Workloads: In scenarios with stateful workloads or data-intensive applications, managing resources in place may be more efficient.(mutable infra)<br/>
+   * Immutable infrastructure is good choice when the system heavily relies on technologies that provide rapid and cheap provisioning of architectural 
+     components. This approach is particularly beneficial in cloud computing environments. <br/>
+   * Hybrid Approaches: In some cases, a hybrid approach may be suitable, combining both mutable and immutable strategies as needed.<br/>
 
 ##### Conclusion
 
