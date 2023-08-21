@@ -34,10 +34,9 @@ The blog post is a `comprehensive & prescriptive guide` to effectively using Ter
 - `Standardization` : The official AWS Terraform modules follow standardized practices and conventions, ensuring that infrastructure deployments adhere to 
    best practices and are consistent with industry standards. All AWS-recommended configurations & good practices are inherited. This standardization ensures 
    that infrastructure follows AWS-recommended guidelines.<br/>
-- `Disaster Recovery Assurance`: In the event of a disaster or system failure, Terraform's idempotency plays a crucial role in disaster recovery plans. Customers 
-   can recreate their entire infrastructure quickly and reliably by simply applying the Terraform configuration.<br/>
+-  `Immutable Infrastructure`: [Terraform is considered as an immutable infrastructure as code technology](https://www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure). For those who are unaware, immutable infrastructure is the concept of never performing updates in place. If an update occurs, it takes place by tearing down the old infrastructure (such as a server). It's the idea that once an infrastructure component is provisioned, it remains unchanged throughout its lifecycle. Any updates or changes result in the creation of a completely new instance, ensuring consistency, predictability, and reliability. This approach is a key driver of stability and resilience in cloud environments. By contrast, with mutable infrastructure, existing resources are allowed to persist through inplace updates or patches instead of resources being deleted and re-created.<br/>
 
-##### Project Overview
+#### Project Overview
 
 A Three-tier architecture is a widely adopted approach for building scalable web applications. It separates the application into three layers: presentation, application logic, and database. In this project, we utilized AWS services to create these layers and ensure scalability and high availability. <br/>
 
