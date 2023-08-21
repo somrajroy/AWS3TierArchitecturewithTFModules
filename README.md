@@ -176,11 +176,21 @@ Immutable infrastructure can be a good choice for organizations that need to:
    * Security-First Environments/ Improve security: For security-conscious environments, immutability facilitates quick response to vulnerabilities by replacing 
      resources with patched versions.
    * Resource Churn: Frequent replacement of resources can lead to resource churn and increased operational overhead.<br/>
-   * Data Management: Immutable infrastructure can be challenging when dealing with stateful data, requiring careful planning for data persistence and migration.<br/>
+   * Data Management: Immutable infrastructure can be challenging when dealing with stateful data, requiring proper planning for data persistence and 
+     migration.For immutable infrastructure to be effective, data must be externalized. This could mean storing data on an external shared database, or on 
+     software-defined storage.<br/>
    * Stateful Workloads: In scenarios with stateful workloads or data-intensive applications, managing resources in place may be more efficient.(mutable infra)<br/>
    * Immutable infrastructure is good choice when the system heavily relies on technologies that provide rapid and cheap provisioning of architectural 
      components. This approach is particularly beneficial in cloud computing environments. <br/>
+   * Maturity needed: Implementing immutable infrastructure requires a high degree of maturity in customers business processes and network, server, and storage 
+     resources.<br/>
+    * Mutable infrastructure is a viable choice when it is expensive to replace servers, and there's a need to keep the servers in operation with minimal 
+     downtime. This is common with physical servers and traditional server-based infrastructure or stateful workloads. <br/>
    * Hybrid Approaches: In some cases, a hybrid approach may be suitable, combining both mutable and immutable strategies as needed.<br/>
+   * In conclusion, the choice between mutable and immutable infrastructure largely depends on factors like the nature of servers (i.e., physical or 
+     virtual), ability to manage data externally, cost, and the maturity level of business processes. Both approaches have their pros and cons. The 
+     general rule is, if customer frequently depend on cloud computing and virtual servers, an immutable infrastructure mostly would be good. However, if there 
+     are physical servers where the cost of replacing a server is very high, a mutable infrastructure might be more suitable. <br/>
 
 ##### Conclusion
 
