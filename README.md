@@ -148,6 +148,28 @@ Other than what mentioned earlier - below are some practices followed during the
  - `Leverage variables.tf & terraform.tfvars files` : Used variables to customize infrastructure & avoid hardcoding values in the configuration file. These files 
     are excellent for externalizing configurations and passing values so they can be easily deployed across multiple environments. 
 
+##### Guidelines on the right strategies and approaches while working with Terraform and Infrastructure as Code.
+When working with Terraform and IaC, there are several strategies/techniques and best practices that can help manage infrastructure effectively. Here are some  points which can be considered. However the key to effectively using Terraform and IaC is not just about writing the code but also about managing it properly. By following the below practices, customers can ensure a well-structured, standardized, and efficient Terraform infrastructure management process. <br/><br/>
+    * `Solid Foundation`: Before diving into Terraform, take the time to understand the basics of Infrastructure as Code (IaC). Get familiarized with the 
+      principles and benefits of IaC to ensure a smooth transition to Terraform.<br/>
+    * `Clear Objective, plan and design` : Invest time planning and designing the infrastructure. A well-thought-out architecture is the foundation of a 
+      successful Terraform project. Take into account all the requirements & NFR's, desired architecture, and scalability needs. This will help create a 
+      well-structured and maintainable Terraform configuration. <br/>
+    * `Version Control`: Treat infrastructure code like any other software project.<br/>
+    * `Leverage Official Modules`: Official Terraform modules from AWS and other providers are best friends. They follow best practices, are well- 
+       maintained, and simplify resource provisioning. This can make your team `auto-didactic` which can lead to huge cost savings & high quality delivery.<br/>
+    * `Automation-First Mindset`: Make automation a priority to reduce manual tasks and minimize errors.<br/>
+    * `Security-First Approach`: Security should be at the core of IaC.<br/>
+    * `Modularize and Reuse` : This not only makes code more organized & manageable but also promotes reusability across different projects. <br/>
+    * `Leverage Variables and Data Sources` to make configurations flexible and dynamic. <br/>
+    * `Continuous Integration and Deployment`: This streamlines the process, reduces human error, and allows for faster iteration and scaling.<br/>
+    * `Documentation`: Document the code, processes and configurations thoroughly (bespoke developments). This helps with troubleshooting, knowledge sharing, and 
+       onboarding new team members.<br/>
+    * `Test & validate`:Test Terraform code thoroughly. Running terraform plan is the easiest way to verify if your changes will work as 
+       expected. Tools like TFLint are also very useful. <br/>
+    * When working with `Terraform and IaC`, it's important to understand the benefits of `immutability` and when to consider adopting an immutable 
+      infrastructure approach. <br/>
+
 ##### Immutable vs Mutable Infrastructure : Points to consider
 The correct approach to infrastructure management will depend on the specific needs of the organization. However, immutable infrastructure is often preferred for production environments where security and reliability are critical. Terraform itself does not inherently make infrastructure immutable or mutable; it's a tool that allows to define, provision and manage infrastructure as code (IaC). Knowing when to consider immutable infrastructure can be difficult, and there is no one clearly defined cutoff or inflection point. It's always important to consider the specific use cases, workloads, needs and constraints of project when deciding on a  strategy. Below points can be considered :
 Immutable infrastructure can be a good choice for organizations that need to:
