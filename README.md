@@ -6,7 +6,7 @@ The blog post is a `comprehensive & prescriptive guide` to effectively using Ter
 
 `For aspiring developers, it's your playground` — a chance to the download code, tinker, and master Terraform. Explore a treasure trove of free, top-quality resources in the `Appendix/References section`, including expert YouTube courses.
 
-`To summarize - this blog is a prescriptive guidance for anyone interested in automation-first, security-first, and efficient infrastructure management`. <br/>
+`To summarize - this blog is a prescriptive guidance for anyone working (or going to start working) in Terraform projects & wants efficient infrastructure management`. <br/>
 
 #### Overall learnings
 - `Terraform Automation, efficient resource management & predictable infrastructure`: Experience the efficiency of infrastructure-as-code using Terraform. 
