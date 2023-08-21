@@ -134,13 +134,19 @@ It is never a good practice to store sensitive information, such as access keys 
 ##### Best Practices
 Other than what mentioned earlier - below are some practices followed during the project :
 
- - Terraform modules registry: The project leverages the [Official Terraform module registry](https://registry.terraform.io/) to find and apply pre-built modules to 
-   provide a turn-key solutions. Other than this we can also use modules from the Terraform community. Open-source modules saves time, improves security, and give greater 
-   confidence in project infrastructure. Importantly these reusable modules encourage best practices
- - [Modules](https://developer.hashicorp.com/terraform/language/modules/develop#standard-module-structure) : A Terraform module is a way of creating a template of a cloud 
-   pattern, parameterizing, and reusing it. They are useful tools for promoting software abstraction and code reuse. Input variables (or Terraform variables, or just variables) are user-supplied values that parametrize Terraform modules without altering the source code. This project is built on modules to increase code 
-   reusability and decrease code redundancy. Modules breaks down complex configurations into smaller configs for reusability and maintainability. It 
-   streamlines the provisioning and management of infrastructure, resulting in more efficient and dependable operations.
+ - `Terraform modules registry & open source modules`: The project leverages the [Official Terraform module registry](https://registry.terraform.io/) to find and 
+    apply pre-built modules to provide a turn-key solutions. Other than this we can also use modules from the Terraform community. Open-source modules saves 
+    time, improves security, and give greater confidence in project infrastructure. Importantly these reusable modules encourage best practices
+ - [Modularization to reduce technical debt](https://developer.hashicorp.com/terraform/language/modules/develop#standard-module-structure) : The code is clean 
+   and concise because we leveraged modules. In real-world you should download the modules and customize it and use it as per needs. A Terraform module 
+   is a way of creating a template of a cloud pattern, parameterizing, and reusing it. They are useful tools for promoting software abstraction and code reuse. 
+   Input variables (or Terraform variables, or just variables) are user-supplied values that parametrize Terraform modules without altering the source code. This 
+   project is built on modules to increase code reusability and decrease code redundancy. Modules breaks down complex configurations into smaller configs for 
+   reusability and maintainability. It streamlines the provisioning and management of infrastructure, resulting in more efficient and dependable operations. 
+   Using Terraform modules reduces technical debt significantly. By using Terraform modules, one can create reusable, modular code that can be easily shared and 
+   maintained across the organization. This helps reduce the amount of technical debt that accumulates over time, since we can avoid duplicating code and 
+   creating custom solutions for every project. Overall, by leveraging Terraform modules, one can create high-quality infrastructure code that is easy to 
+   maintain and scale over time. <br/>
  - Leverage Official Open Source Modules : We fully leveraged open source modules provided freely by Hashicorp. This helps the team to scale faster as every 
    developer is likely to be familiar with an open source module (unlike bespoke modules) resulting new staff enrolment to be quicker. Another big advantage is 
    that development team now can easily create opinionated modules from these open source modules which can serve a specific purpose (instead of starting from 
