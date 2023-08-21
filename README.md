@@ -167,7 +167,9 @@ Other than what mentioned earlier - below are some practices followed during the
 The correct approach to infrastructure management will depend on the specific needs of the organization. However, immutable infrastructure is often preferred for production environments where security and reliability are critical. Terraform itself does not inherently make infrastructure immutable or mutable; it's a tool that allows to define, provision and manage infrastructure as code (IaC). Knowing when to consider immutable infrastructure can be difficult, and there is no one clearly defined cutoff or inflection point. It's always important to consider the specific use cases, needs and constraints of project when deciding on an infrastructure strategy. Assess the project's requirements and objectives to determine whether mutable or immutable infrastructure is more suitable. Below points can be considered :
 Immutable infrastructure can be a good choice for organizations that need to:
    * Increase reliability <br/>
-   * Reduce costs <br/>
+   * Cost-efficiency: Immutable infrastructure can help to reduce costs by eliminating the need to patch & update infrastructure resources. This is because 
+     each resource is replaced when it needs to be updated, rather than being patched in place. However sometimes resource churn can increase operational 
+     overhead/concerns <br/>
    * Complex systems & need for Simplify operations : Immutability is the Answer to Complexity. Complex systems often benefit from the predictability of       
      immutable infrastructure. <br/>
    * Frequent Updates (dynamic vs static) : In environments with frequent updates and changes, immutability simplifies maintenance and ensures each change 
