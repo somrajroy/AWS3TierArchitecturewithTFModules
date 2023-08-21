@@ -141,11 +141,11 @@ Other than what mentioned earlier - below are some practices followed during the
    pattern, parameterizing, and reusing it. They are useful tools for promoting software abstraction and code reuse. Input variables (or Terraform variables, or just variables) are user-supplied values that parametrize Terraform modules without altering the source code. This project is built on modules to increase code 
    reusability and decrease code redundancy. Modules breaks down complex configurations into smaller configs for reusability and maintainability. It 
    streamlines the provisioning and management of infrastructure, resulting in more efficient and dependable operations.
- - Leverage Official Open Source Modules : We fully leveraged open source modules provided freely by Hashicorp. This helps the team to scale faster as every developer   
-   is likely to be familiar with an open source module (unlike bespoke modules) resulting new staff enrolment to be quicker. Another big advantage is that development team 
-   now can easily create opinionated modules from these open source modules which can serve a specific purpose (instead of starting from scratch). If they think these open 
-   source modules to be too broad they can create in-house opinionated modules for specific use case. Open-source modules are highly configurable & easy to make more 
-   configurable.
+ - Leverage Official Open Source Modules : We fully leveraged open source modules provided freely by Hashicorp. This helps the team to scale faster as every 
+   developer is likely to be familiar with an open source module (unlike bespoke modules) resulting new staff enrolment to be quicker. Another big advantage is 
+   that development team now can easily create opinionated modules from these open source modules which can serve a specific purpose (instead of starting from 
+   scratch). If they think these open source modules to be too broad they can create in-house opinionated modules for specific use case. Open-source modules are 
+   highly configurable & easy to make more configurable.
  - Don’t Repeat Yourself (DRY) : One of the principles of software engineering is DRY (don’t repeat yourself). The same applies to IaC. In this project we 
    applied Modularization (official Terraform modules) to achieve DRY state.  
  - Remote state storage: The Terraform state files are stored in a remote location (AWS S3) to enable collaboration and ensure consistency.
