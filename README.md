@@ -9,6 +9,7 @@ The blog post is a `comprehensive & prescriptive guide` to effectively using Ter
 `To summarize - this blog is a prescriptive guidance for anyone working (or going to start working) in Terraform projects & wants efficient infrastructure management`. <br/>
 
 ### _Overall learnings_
+-  `Strategy/Techniques/guidelines` and best practices which can be followed in a Terraform/IaC projects.
 - `Terraform Automation, efficient resource management & predictable infrastructure`: Experience the efficiency of infrastructure-as-code using Terraform. 
    Rapidly deploy the complex Cloud architectures with ease. One of the key benefits of Terraform is its idempotency, which ensures that infrastructure 
    deployments are consistent, predictable, and efficient. This also reduces operational risk, making it an ideal choice for production environments.<br/>
