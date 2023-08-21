@@ -1,4 +1,4 @@
-#### #Opensource Project to set up a Three-tier Architecture in AWS using Terraform & official AWS modules. 
+### #Opensource Project to set up a Three-tier Architecture in AWS using Terraform & official AWS modules. 
 ### Introduction & Purpose
 
 In this `#opensource` project we will go through the experience of creating a `Complex Three-tier Cloud architecture (AWS) using Terraform` ([LAMP stack](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html)). All AWS Infrastructure implementation was done using offcial AWS Terraform modules.  The project aimed to create a scalable, secure, and high-performing web application environment with real-world best practices & realistic patterns. <br/><br/>
@@ -148,7 +148,7 @@ Other than what mentioned earlier - below are some practices followed during the
  - `Leverage variables.tf & terraform.tfvars files` : Used variables to customize infrastructure & avoid hardcoding values in the configuration file. These files 
     are excellent for externalizing configurations and passing values so they can be easily deployed across multiple environments. 
 
-##### Guidelines on the right strategies and approaches while working with Terraform and Infrastructure as Code.
+#### Guidelines on the right strategies and approaches while working with Terraform and Infrastructure as Code.
 When working with Terraform and IaC, there are several strategies/techniques and best practices that can help manage infrastructure effectively. Here are some  points which can be considered. However the key to effectively using Terraform and IaC is not just about writing the code but also about managing it properly. By following the below practices, customers can ensure a well-structured, standardized, and efficient Terraform infrastructure management process. <br/><br/>
     * `Solid Foundation`: Before diving into Terraform, take the time to understand the basics of Infrastructure as Code (IaC). Get familiarized with the 
       principles and benefits of IaC to ensure a smooth transition to Terraform.<br/>
