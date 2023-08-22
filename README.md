@@ -2,11 +2,16 @@
 ### _Introduction & Purpose_
 
 In this `#opensource` project we will go through the experience of creating a `Complex Three-tier Cloud architecture (AWS) using Terraform` ([LAMP stack](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html)). All AWS Infrastructure implementation was done using offcial AWS Terraform modules.  The project aimed to create a scalable, secure, and high-performing web application environment with real-world best practices & realistic patterns. <br/><br/>
-The blog post is a `comprehensive & prescriptive guide` to effectively using Terraform to create a complex Cloud Architectures. Everything is `#opensource` so feel free to leverage. `It is written to help people at all levels and roles, from junior developers to CxOs`, to learn about best practices and ways to effectively use IaC in a Digital Transformation journey. It would also serve as a valuable resource/guide for `architects and project managers` looking to impress existing customers with their knowledge of IaC, automation-first and security-first approaches. They can leverage the blog insights to supercharge their projects and client engagements. The objective insights and real-world best practices mentioned in the blog can also be directly put in proposals/RFP's. `The automation-first, security-first approach will elevate the proposals` and create a positive enviornment. <br/>
+The blog post is a `comprehensive & prescriptive guide` to effectively using Terraform to create a complex Cloud Architectures. Everything is `#opensource` so feel free to leverage. `It is written to help people at all levels and roles, from junior developers to CxOs`, to learn about best practices and ways to effectively use Terraform/IaC in a Digital Transformation journey. By offering advanced content while also catering to newcomers, this blog caters to a wide range of audiences. This approach allows beginners to benefit from the blog and gradually scale up their Terraform skills. Additionally, it provides an opportunity for more experienced users to deepen their understanding and explore advanced concepts. `There are lot of curated free resources mentioned. The inclusion of these resources can greatly enhance the learning experience for everyone.`<br/>
 
-`For aspiring developers, it's your playground` — a chance to the download code, tinker, and master Terraform. Explore a treasure trove of free, top-quality resources in the `Appendix/References section`, including expert YouTube courses.
+  * This blog would serve as a valuable resource/guide for `architects and project managers` looking to impress existing customers with their knowledge of IaC, automation-first and
+    security-first approaches. They can leverage the blog insights to supercharge their projects and client engagements. <br/>
+  * The objective insights and real-world best practices mentioned in the blog can also be put in proposals/RFP's. `The automation-first, security-first approach will elevate 
+     the proposals` and create a positive enviornment. <br/>
+  * `For developers, it's playground` — a chance to the download code, experiment, and master Terraform. Explore the free, top-quality resources in the `Appendix/References section`, 
+     including expert YouTube courses.<br/>
 
-`To summarize - this blog is a prescriptive guidance for anyone working (or going to start working) in Terraform projects & wants efficient infrastructure management`. <br/>
+To summarize - this blog is a prescriptive guidance for anyone working (or going to start working) in Terraform projects & wants efficient infrastructure management. <br/>
 
 ### _Overall learnings_
 -  `Strategy/Techniques/guidelines` and best practices which can be followed in a Terraform/IaC projects.
