@@ -154,7 +154,7 @@ Other than what mentioned earlier - below are some practices followed during the
  - `Leverage variables.tf & terraform.tfvars files` : Used variables to customize infrastructure & avoid hardcoding values in the configuration file. These files 
     are excellent for externalizing configurations and passing values so they can be easily deployed across multiple environments. 
 
-### _Guidelines on the  strategies and approaches while working with Terraform and Infrastructure as Code._
+### _Guidelines/strategies/approaches while working with Terraform and Infrastructure as Code._
 When working with Terraform and IaC, there are several strategies/techniques and best practices that can help manage infrastructure effectively. Here are some  points which can be considered. However the key to effectively using Terraform and IaC is not just about writing the code but also about managing it properly. By following the below practices, customers can ensure a well-structured, standardized, and efficient Terraform infrastructure management process. <br/><br/>
     * `Solid Foundation`: Before diving into Terraform, take the time to understand the basics of Infrastructure as Code (IaC). Get familiarized with the 
       principles and benefits of IaC to ensure a smooth transition to Terraform.<br/>
