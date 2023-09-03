@@ -210,7 +210,9 @@ Immutable infrastructure can be a good choice for organizations that need to:
 
 ### _Conclusion_
 
-Setting up a Three-tier architecture in AWS using Terraform & LAMP stack was an insightful & rewarding experience.  The combination of these technologies allowed us to achieve scalability, security, and reliability for our web application. It allowed us to gain a deeper understanding of AWS services and infrastructure as code practices. I hope this blog post inspires others to explore this architecture and its benefits. As someone who has applied many of these points (strategies/best practices) in production (or real-time) projects, I can attest to their effectiveness and the value they will bring to customers.
+Setting up a Three-tier architecture in AWS using Terraform & LAMP stack was an insightful & rewarding experience.  The combination of these technologies allowed us to achieve scalability, security, and reliability for our web application. It allowed us to gain a deeper understanding of AWS services and infrastructure as code practices. I hope this blog post inspires others to explore this architecture and its benefits. <br/>
+
+As someone who has applied many of these points (strategies/best practices) in production (or real-time) projects, I can attest to their effectiveness and the value they will bring to customers.
 
 ### _Appendix/References_
 
