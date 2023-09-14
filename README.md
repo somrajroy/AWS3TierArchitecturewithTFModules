@@ -72,7 +72,7 @@ To build our three-tier architecture, we leveraged various AWS services. These i
     - `Simplicity & consitency`: The official Terraform modules provide a significant level of convenience, pre-configuration & and consistent patterns for 
         infrastructure provisioning which helps accelerate the development and deployment process. <br/>
     - `Documentation and versioning` : these remote modules are very well documented and versioned. Anyone new can easily scale up & be productive at the 
-       earliest. Documentation isn't an afterthought; it's an ally in quality, troubleshooting, knowledge sharing, and welcoming new team members into the ecosystem. These modules 
+       earliest. Documentation isn't an afterthought; it's an ally in troubleshooting, knowledge sharing, and welcoming new team members into the ecosystem. These modules 
        are well documented and will not only make things simple but reduce cost without compromising on quality.<br/>
     -  `Cost optimization & benefits which can be passed to customers` : AWS Terraform modules are designed to leverage AWS services in an optimized manner.
         Official Terraform AWS modules helps reduce efforts and costs of implementation which can be passed to customers. We can save a lot of time by using 
