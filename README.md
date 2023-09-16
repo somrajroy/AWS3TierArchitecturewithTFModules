@@ -209,6 +209,15 @@ Immutable infrastructure can be a good choice for organizations that need to:
      general rule is, if customer frequently depend on cloud computing and virtual servers, an immutable infrastructure mostly would be good. However, if there 
      are physical servers where the cost of replacing a server is very high, a mutable infrastructure might be more suitable. <br/>
 
+### _Sample story telling formula/strategy_
+Its a 5 point strategy but feel free to edit : <br>
+   * Name the enemy (in classic terms this is the problem) : Here pain, problems, obstacles needs to be identified. It can be made real and vivid as possible. Customers are most probably tired of dealing with 
+     slow, unreliable infrastructure that hinders business growth. The enemy of progress is outdated, inefficient infrastructure that fails to keep up with the demands of modern businesses. Expertise and experience to overcome them and deliver exceptional results. <br/>
+   * Intensify the urgency : Is the problem getting bigger as time goes on ? What forces are making it worse ? How will the problem get worse ? Why is the problem so bad ?<br>
+   * Paint the promised land : Future cast how the world would look for them. Give reason(s) to come along on the ride with you <br>
+   * Explain away the obstacles : Outline the obstacles and show how they can be solved.<br>
+   * Win customers over with evidence : Evidence to back it up. This blog post on Terraform and Infrastructure as Code outlines the approach and provides real-world example of how we have helped customers 
+     achieve their goals. You can help them to take their infrastructure to the next level and drive business forward.<br>
 ### _Conclusion_
 
 Setting up a Three-tier architecture in AWS using Terraform & LAMP stack was an insightful & rewarding experience.  The combination of these technologies allowed us to achieve scalability, security, and reliability for our web application. It allowed us to gain a deeper understanding of AWS services and infrastructure as code practices. I hope this blog post inspires others to explore this architecture and its benefits. <br/>
