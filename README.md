@@ -3,7 +3,8 @@
 
 In this advanced Terraform `#opensource` project we will go through the experience of creating a `Complex Three-tier Cloud architecture (AWS) using Terraform` ([LAMP stack](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html)) and best practices to follow in any Terraform project. All AWS Infrastructure implementation was done using offcial AWS Terraform modules.  The project aimed to create a scalable, secure, and high-performing web application environment with real-world best practices & realistic patterns. <br/><br/>
 
-This blog post is intended to help people at all levels and roles. `As someone who has applied many of these points (strategies/best practices) in production (or real-time) projects, I can attest to their effectiveness and the value they will bring to customers.`. The is a comprehensive & prescriptive guide to effectively using Terraform to create a complex Cloud Architectures. Everything is `#opensource` so feel free to leverage.  <br/>
+This blog post is intended to help people at all levels and roles. This is a comprehensive & prescriptive guide to effectively using Terraform to create a complex Cloud Architectures. Everything is `#opensource` so feel free to leverage.  <br/>
+
 ### _Who should use this guide?_
 This guide is intended to help people at all levels and roles. I have applied many of these techniques/strategies in real-time projects & have witnessed first-hand the positive impact they can have on project outcomes.<br/>
 
@@ -223,7 +224,7 @@ Its a 5 point strategy but feel free to edit : <br>
      achieve their goals. You can help them to take their infrastructure to the next level and drive business forward.<br>
 ### _Conclusion_
 
-Setting up a Three-tier architecture in AWS using Terraform & LAMP stack was an insightful & rewarding experience.  The combination of these technologies allowed us to achieve scalability, security, and reliability for our web application. It allowed us to gain a deeper understanding of AWS services and infrastructure as code practices. I hope this blog post inspires others to explore this architecture and its benefits. <br/>
+Setting up a Three-tier architecture in AWS using Terraform & LAMP stack was an insightful & rewarding experience.  The combination of these technologies allowed us to achieve scalability, security, and reliability for our web application. It allowed us to gain a deeper understanding of AWS services and infrastructure as code practices. I hope this blog post inspires others to explore this architecture and its benefits.  `As someone who has applied many of these points (strategies/best practices) in production (or real-time) projects, I can attest to their effectiveness and the value they will bring to customers.` <br/>
 
 ### _Appendix/References_
 
