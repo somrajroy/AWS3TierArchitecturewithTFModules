@@ -10,7 +10,8 @@ This guide is intended to help people at all levels and roles. I have applied ma
   * This blog would serve as a valuable resource/guide for `architects and project managers` looking to impress existing customers with their knowledge of IaC, `automation-first` and
     `security-first` approaches. They can leverage the blog insights strenthen their customer relationships, supercharge their projects and win additional work. <br/>
   * The objective insights and real-world best practices mentioned in the blog can also be put in proposals/RFP's. `The automation-first, security-first approach will elevate 
-     the proposals` and create a positive enviornment. The insights of the blog will help to develop more targeted and effective proposals that are cost-efficient.<br/>
+     the proposals` and create a positive enviornment. The insights of the blog will help to develop more targeted and effective proposals that are cost-efficient. I have mentioned a sample storytelling 
+     strategy and approach at the end of this blog which they can leverage.<br/>
   * `For developers, it's playground` — a chance to the download code, experiment, and master Terraform. Explore the free, top-quality resources in the `Appendix/References section`, 
      including expert YouTube courses.<br/>
 
