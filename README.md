@@ -3,10 +3,12 @@
 
 In this advanced Terraform `#opensource` project we will go through the experience of creating a `Complex Three-tier Cloud architecture (AWS) using Terraform` ([LAMP stack](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html)) and best practices to follow in any Terraform project. All AWS Infrastructure implementation was done using offcial AWS Terraform modules.  The project aimed to create a scalable, secure, and high-performing web application environment with real-world best practices & realistic patterns. <br/><br/>
 
-This blog post is intended to help people at all levels and roles. `As someone who has applied many of these points (strategies/best practices) in production (or real-time) projects, I can attest to their effectiveness and the value they will bring to customers.`. The is a comprehensive & prescriptive guide to effectively using Terraform to create a complex Cloud Architectures. Everything is `#opensource` so feel free to leverage. It is written to help people at all levels and roles, from `junior developers to CxOs`, to learn about best practices and ways to effectively use Terraform/IaC in a Digital Transformation journey. By offering advanced content while also catering to newcomers, this blog caters to a wide range of audiences. There are lot of curated free resources mentioned. The inclusion of these resources can greatly enhance the learning experience for everyone.<br/>
+This blog post is intended to help people at all levels and roles. `As someone who has applied many of these points (strategies/best practices) in production (or real-time) projects, I can attest to their effectiveness and the value they will bring to customers.`. The is a comprehensive & prescriptive guide to effectively using Terraform to create a complex Cloud Architectures. Everything is `#opensource` so feel free to leverage. It is written to help people at all levels and roles, from `junior developers to CxOs`, to learn about best practices and ways to effectively use Terraform/IaC in a Digital Transformation journey. <br/><br/>
+### _Who should use this guide?_
+This guide is intended to help people at all levels and roles. I have applied many of these techniques/strategies in real-time projects & have witnessed first-hand the positive impact they can have on project outcomes.<br/>
 
   * This blog would serve as a valuable resource/guide for `architects and project managers` looking to impress existing customers with their knowledge of IaC, `automation-first` and
-    `security-first` approaches. They can leverage the blog insights to supercharge their projects and client engagements. <br/>
+    `security-first` approaches. They can leverage the blog insights strenthen their customer relationships, supercharge their projects and win additional work. <br/>
   * The objective insights and real-world best practices mentioned in the blog can also be put in proposals/RFP's. `The automation-first, security-first approach will elevate 
      the proposals` and create a positive enviornment. The insights of the blog will help to develop more targeted and effective proposals that are cost-efficient.<br/>
   * `For developers, it's playground` — a chance to the download code, experiment, and master Terraform. Explore the free, top-quality resources in the `Appendix/References section`, 
@@ -221,8 +223,6 @@ Its a 5 point strategy but feel free to edit : <br>
 ### _Conclusion_
 
 Setting up a Three-tier architecture in AWS using Terraform & LAMP stack was an insightful & rewarding experience.  The combination of these technologies allowed us to achieve scalability, security, and reliability for our web application. It allowed us to gain a deeper understanding of AWS services and infrastructure as code practices. I hope this blog post inspires others to explore this architecture and its benefits. <br/>
-
-I have applied many of these techniques/strategies in real-time projects & have witnessed first-hand the positive impact they can have on project outcomes.
 
 ### _Appendix/References_
 
