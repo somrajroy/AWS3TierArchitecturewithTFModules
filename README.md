@@ -245,3 +245,4 @@ Below are some additional resources and references for further learning: <br/>
 7. [Official Hasicorp Terraform hands-on tutorials](https://developer.hashicorp.com/terraform/tutorials)<br/>
 8. [HashiCorp Terraform Associate Certification Course (003) - Pass the Exam](https://www.youtube.com/watch?v=SPcwo0Gq9T8)<br/>
 9. [HashiCorp Terraform Associate Certification Course - Pass the Exam!](https://www.youtube.com/watch?v=V4waklkBC38)<br/>
+10. [Complete Terraform Course - From BEGINNER to PRO! (Learn Infrastructure as Code)](https://www.youtube.com/watch?v=7xngnjfIlK4)<br/>
