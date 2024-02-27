@@ -8,6 +8,7 @@ This blog post is intended to help people at all levels and roles. This is a com
 ### _Who should use this guide?_
 This guide is intended to help people at all levels and roles. I have applied many of these techniques/strategies in real-time projects & have witnessed first-hand the positive impact they can have on project outcomes.<br/>
 
+  * `Adaptability & wide applicability`: The content is designed to cater to varying levels of expertise, ensuring that both newcomers and seasoned professionals can benefit from its insights. <br/>
   * This blog would serve as a valuable resource/guide for `architects and project managers` looking to impress existing customers with their knowledge of IaC, `automation-first` and
     `security-first` approaches. They can leverage the blog insights strenthen their customer relationships, supercharge their projects and win additional work. <br/>
   * The objective insights and real-world best practices mentioned in the blog can also be put in proposals/RFP's. `The automation-first, security-first approach will elevate 
@@ -15,6 +16,9 @@ This guide is intended to help people at all levels and roles. I have applied ma
      strategy and approach at the end of this blog which they can leverage.<br/>
   * `For developers, it's playground` — a chance to the download code, experiment, and master Terraform. Explore the free, top-quality resources in the `Appendix/References section`, 
      including expert YouTube courses.<br/>
+  * `Good Industry Practices` : This blog incorporates/mentions industry best practices, offering a benchmark for teams to align with and implement in their projects. <br/>
+  * `Shorter Learning Curve` : Practical insights and hands-on strategies provide conceptual clarity which will help accelerating the learning curve for anyone. <br/>
+  
 
 To summarize - this blog is a prescriptive guidance for anyone working (or going to start working) in Terraform projects & wants efficient infrastructure management. <br/>
 
