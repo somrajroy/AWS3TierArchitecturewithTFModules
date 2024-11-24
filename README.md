@@ -3,7 +3,7 @@
 
 In this advanced Terraform `#opensource` project we will go through the experience of creating a `Complex Three-tier Cloud architecture (AWS) using Terraform` ([LAMP stack](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html)) and best practices to follow in any Terraform project. All AWS Infrastructure implementation was done using offcial AWS Terraform modules.  The project aimed to create a scalable, secure, and high-performing web application environment with real-world best practices & realistic patterns. <br/>
 This blog post is intended to help people at all levels and roles. This is a comprehensive & prescriptive guide to effectively using Terraform to create a complex Cloud Architectures. Everything is `#opensource` so feel free to leverage.  <br/>
-[Microsoft too recommends similar approach](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/deploy-landing-zones-with-terraform#simple-example) and [has modules of thier own](https://learn.microsoft.com/en-us/shows/azure-essentials-show/introduction-to-the-azure-landing-zones-terraform-module).
+[Microsoft too recommends similar approach](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/deploy-landing-zones-with-terraform) and [has modules of thier own](https://learn.microsoft.com/en-us/shows/azure-essentials-show/introduction-to-the-azure-landing-zones-terraform-module).
 
 ### _Who should use this guide?_
 This guide is intended to help people at all levels and roles. I have applied many of these techniques/strategies in real-time projects & have witnessed first-hand the positive impact they can have on project outcomes.<br/>
