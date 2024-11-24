@@ -1,4 +1,4 @@
-### #Opensource Project to set up a Three-tier Architecture in AWS using Terraform & official AWS modules. 
+### Set up a 3-tier Architecture in AWS using Terraform & official AWS (turn-key) modules following a security-first and automation-first approach. 
 ### _Introduction & Purpose_
 
 In this advanced Terraform `#opensource` project we will go through the experience of creating a `Complex Three-tier Cloud architecture (AWS) using Terraform` ([LAMP stack](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html)) and best practices to follow in any Terraform project. All AWS Infrastructure implementation was done using offcial AWS Terraform modules.  The project aimed to create a scalable, secure, and high-performing web application environment with real-world best practices & realistic patterns. <br/><br/>
